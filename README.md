@@ -1,6 +1,6 @@
 # Stefano Theofanous
 
-**Founder, Goroshi LLC**  
+**Founder, Goroshi LLC**<br>
 Software engineering · Business automation · AI developer tooling
 
 I build software for restaurant and property operations, and tooling for controlled AI-assisted development.
@@ -10,15 +10,15 @@ My work connects source data, business rules, and usable interfaces, with partic
 
 ## Selected engineering work
 
-**Business operations and financial data**  
+**Business operations and financial data**<br>
 Sales reconciliation, statement packages, document extraction, and property labor and invoice workflows.
 The engineering emphasizes typed money, exact allocation, and traceable source records.
 
-**AI-assisted development platforms**  
+**AI-assisted development platforms**<br>
 Isolated workspaces, task ownership, context retrieval, and evidence-driven review.
 Validation distinguishes a consistent record of work from a verified running system.
 
-**Geospatial decision support**  
+**Geospatial decision support**<br>
 Battery energy storage site screening that relates land-use observations to substation locations and voltage information.
 Source provenance, exclusions, and explicit unknowns accompany the results.
 
