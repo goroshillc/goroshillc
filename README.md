@@ -1,12 +1,26 @@
-# Stefano Theofanous
+<h1 align="center">Stefano Theofanous</h1>
 
-**Founder, Goroshi LLC**<br>
-Software engineering · Business automation · AI developer tooling
+<p align="center">
+  <strong>Founder, Goroshi LLC</strong><br>
+  Software engineering · Business automation · AI developer tooling
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Rust-18181B?style=for-the-badge&amp;logo=rust&amp;logoColor=white" alt="Technical focus: Rust">
+  <img src="https://img.shields.io/badge/HTTP_APIs-27272A?style=for-the-badge" alt="Technical focus: HTTP APIs">
+  <img src="https://img.shields.io/badge/Data_Validation-3F3F46?style=for-the-badge" alt="Technical focus: data validation">
+  <img src="https://img.shields.io/badge/AI_Tooling-52525B?style=for-the-badge" alt="Technical focus: AI tooling">
+</p>
+
+<p align="center">
+  <strong>Fully remote opportunities</strong> · <a href="https://www.linkedin.com/in/stefano-theofanous-a418a4426/">LinkedIn</a><br>
+  <a href="#selected-engineering-work">Selected work</a> · <a href="#engineering-approach">Engineering approach</a> · <a href="#opportunities">Opportunities</a>
+</p>
+
+---
 
 I build software for restaurant and property operations, and tooling for controlled AI-assisted development.
 My work connects source data, business rules, and usable interfaces, with particular attention to correctness, traceability, and failure handling.
-
-**Fully remote opportunities** · [Connect on LinkedIn](https://www.linkedin.com/in/stefano-theofanous-a418a4426/)
 
 ## Selected engineering work
 
@@ -49,7 +63,6 @@ Rust · HTTP APIs · Backend services · Command-line tools · Data validation �
 
 I am interested in **fully remote** roles in backend development, business automation, internal tools, and applied AI.
 Business source code and operational records remain private; I can discuss the architecture and engineering decisions behind the work.
-For a conversation about relevant work, [contact me on LinkedIn](https://www.linkedin.com/in/stefano-theofanous-a418a4426/).
 
 ---
 
