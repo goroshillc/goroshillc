@@ -1,54 +1,53 @@
 # Stefano Theofanous
 
-**Founder, Goroshi LLC · Software engineering · Business automation · Developer tooling**
+**Founder, Goroshi LLC**  
+Software engineering · Business automation · AI developer tooling
 
-I build software around work I know firsthand: restaurant operations, rental-property management, and the systems that help small teams use AI responsibly.
-My focus is the full path from source data and business rules to a usable interface, a reproducible result, and an explainable failure.
+I build software for restaurant and property operations, and tooling for controlled AI-assisted development.
+My work connects source data, business rules, and usable interfaces, with particular attention to correctness, traceability, and failure handling.
 
-**Open to fully remote software engineering and business automation opportunities.**
-
-[Connect on LinkedIn](https://www.linkedin.com/in/stefano-theofanous-a418a4426/)
+**Fully remote opportunities** · [Connect on LinkedIn](https://www.linkedin.com/in/stefano-theofanous-a418a4426/)
 
 ## Selected engineering work
 
-### Business operations and financial data
+**Business operations and financial data**  
+Sales reconciliation, statement packages, document extraction, and property labor and invoice workflows.
+The engineering emphasizes typed money, exact allocation, and traceable source records.
 
-Restaurant sales reconciliation, statement packages, document extraction, and property labor and invoice workflows.
-The engineering includes a Rust money type using integer cents, checked arithmetic, and remainder-preserving allocation so a split reconciles to its original amount.
-Source traceability and explicit unresolved values matter as much as the final report.
+**AI-assisted development platforms**  
+Isolated workspaces, task ownership, context retrieval, and evidence-driven review.
+Validation distinguishes a consistent record of work from a verified running system.
 
-### AI-assisted development platforms
+**Geospatial decision support**  
+Battery energy storage site screening that relates land-use observations to substation locations and voltage information.
+Source provenance, exclusions, and explicit unknowns accompany the results.
 
-Tooling for isolated workspaces, task ownership, context retrieval, and evidence-driven review.
-One Rust component validates relationships between requirements, project decisions, and review, test, integration, and runtime evidence.
-It rejects malformed input and distinguishes consistent evidence references from independently verified system behavior.
-That boundary prevents a completed checklist from being mistaken for a working deployment.
+<details>
+<summary><strong>Engineering detail: data invariants, validation boundaries, and uncertainty</strong></summary>
 
-### Geospatial decision support
+- **Financial correctness:** a Rust money type represents integer cents, exposes checked arithmetic, and preserves remainders during allocation so the parts reconcile to the original amount.
+- **Evidence contracts:** an offline Rust validator checks relationships between requirements, project decisions, and review, test, integration, and runtime evidence; malformed inputs are rejected, and reference consistency is explicitly separate from independent verification.
+- **Geospatial uncertainty:** straight-line proximity is a screening input, not proof of interconnection capacity; land-use observations remain distinct from legal parcel boundaries.
 
-Battery energy storage site-screening software that relates land-use observations to substation locations and voltage information.
-The design separates source provenance, distance screening, exclusions, and unknowns.
-A nearby substation does not establish available capacity, and a land-use polygon does not establish a legal parcel boundary.
+</details>
 
 *These are private projects at different stages of development and validation; this overview does not imply that every component is deployed.*
 
 ## Technical focus
 
-**Rust · HTTP APIs · Backend services · Command-line tools · Data validation · Workflow automation · AI-assisted development**
+Rust · HTTP APIs · Backend services · Command-line tools · Data validation · Workflow automation
 
 ## Engineering approach
 
-- **Clear contracts:** typed inputs, explicit ownership, bounded operations, and useful errors.
-- **Deliberate integration:** direct APIs and existing components where they fit the problem.
-- **Verifiable behavior:** failure-case tests, reproducible checks, and separate evidence for deployment.
-- **Maintainable delivery:** focused changes, documented tradeoffs, and durable handoffs.
-- **Responsible AI use:** AI assists implementation; review and verification remain my responsibility.
-
-My background in business operations shapes the questions I ask: who uses this, what can go wrong, and how do we know the result is correct?
+- **Correctness:** typed inputs, bounded operations, and explicit failure states.
+- **Integration:** direct APIs and existing components where they fit the problem.
+- **Verification:** failure-case tests, reproducible checks, and separate deployment evidence.
+- **Maintainability:** focused changes, documented tradeoffs, and durable handoffs.
+- **Accountability:** AI assists implementation; review and verification remain my responsibility.
 
 ## Opportunities
 
-I am interested in fully remote roles involving backend development, business automation, internal tools, and applied AI workflows.
+I am interested in **fully remote** roles in backend development, business automation, internal tools, and applied AI.
 Business source code and operational records remain private; I can discuss the architecture and engineering decisions behind the work.
 For a conversation about relevant work, [contact me on LinkedIn](https://www.linkedin.com/in/stefano-theofanous-a418a4426/).
 
