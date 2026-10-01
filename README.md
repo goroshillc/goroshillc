@@ -1,69 +1,86 @@
-<h1 align="center">Stefano Theofanous</h1>
+<div align="center">
 
-<p align="center">
-  <strong>Founder, Goroshi LLC</strong><br>
-  Software engineering · Business automation · AI developer tooling
-</p>
+![Goroshi LLC. Build with proof. A ring surrounds a precise architectural grid.](assets/hero.svg)
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Rust-18181B?style=for-the-badge&amp;logo=rust&amp;logoColor=white" alt="Technical focus: Rust">
-  <img src="https://img.shields.io/badge/HTTP_APIs-27272A?style=for-the-badge" alt="Technical focus: HTTP APIs">
-  <img src="https://img.shields.io/badge/Data_Validation-3F3F46?style=for-the-badge" alt="Technical focus: data validation">
-  <img src="https://img.shields.io/badge/AI_Tooling-52525B?style=for-the-badge" alt="Technical focus: AI tooling">
-</p>
+# Stefano Theofanous
 
-<p align="center">
-  <strong>Fully remote opportunities</strong> · <a href="https://www.linkedin.com/in/stefano-theofanous-a418a4426/">LinkedIn</a><br>
-  <a href="#selected-engineering-work">Selected work</a> · <a href="#engineering-approach">Engineering approach</a> · <a href="#opportunities">Opportunities</a>
-</p>
+**Founder, Goroshi LLC** · Software engineering · Business automation · AI developer tooling
+
+[Explore the work](#selected-work) · [How I build](#how-i-build) · [Public proof](#public-proof) · [Connect](#connect)
+
+</div>
 
 ---
 
-I build software for restaurant and property operations, and tooling for controlled AI-assisted development.
-My work connects source data, business rules, and usable interfaces, with particular attention to correctness, traceability, and failure handling.
+I turn messy operational work into software that people can inspect, use, and trust.
+My focus is the connection between **source data**, **explicit business rules**, and **clear interfaces**.
+Rust, APIs, and AI-assisted development are tools in that work; a passing build is only one part of proving a system behaves as intended.
 
-## Selected engineering work
+## Selected work
 
-**Business operations and financial data**<br>
-Sales reconciliation, statement packages, document extraction, and property labor and invoice workflows.
-The engineering emphasizes typed money, exact allocation, and traceable source records.
-
-**AI-assisted development platforms**<br>
-Isolated workspaces, task ownership, context retrieval, and evidence-driven review.
-Validation distinguishes a consistent record of work from a verified running system.
-
-**Geospatial decision support**<br>
-Battery energy storage site screening that relates land-use observations to substation locations and voltage information.
-Source provenance, exclusions, and explicit unknowns accompany the results.
+| Domain | The problem | My engineering focus |
+| :--- | :--- | :--- |
+| **Business operations** | Restaurant and property workflows begin with records from different sources. | Traceable inputs, exact allocation, typed money, and reviewable outputs. |
+| **Developer platforms** | AI-assisted work can lose context, duplicate ownership, or report completion too early. | Isolated workspaces, explicit task ownership, bounded context, and evidence tied to each claim. |
+| **Geospatial decisions** | A nearby feature on a map can look more certain than the source permits. | Provenance, exclusions, and visible unknowns in energy-site screening. |
 
 <details>
-<summary><strong>Engineering detail: data invariants, validation boundaries, and uncertainty</strong></summary>
+<summary><strong>What these terms mean</strong></summary>
 
-- **Financial correctness:** a Rust money type represents integer cents, exposes checked arithmetic, and preserves remainders during allocation so the parts reconcile to the original amount.
-- **Evidence contracts:** an offline Rust validator checks relationships between requirements, project decisions, and review, test, integration, and runtime evidence; malformed inputs are rejected, and reference consistency is explicitly separate from independent verification.
-- **Geospatial uncertainty:** straight-line proximity is a screening input, not proof of interconnection capacity; land-use observations remain distinct from legal parcel boundaries.
+**Typed money** means amounts are represented as integer cents with operations designed to preserve accounting invariants.
+**Provenance** means a conclusion retains a path back to the source and method that produced it.
+**Evidence of completion** separates source review and tests from integration, installation, and observed behavior.
 
 </details>
 
-*These are private projects at different stages of development and validation; this overview does not imply that every component is deployed.*
+These are architectural descriptions of private work at different stages.
+They are not claims that every component is public, deployed, or available to run.
 
-## Technical focus
+## Public proof
 
-Rust · HTTP APIs · Backend services · Command-line tools · Data validation · Workflow automation
+**[Local Data Exporter](https://github.com/goroshillc/local-data-exporter)** is a RuneLite plugin that writes local account snapshots to JSON for personal tracking and analysis.
+Its public repository documents the exported data and files.
+The plugin is a concrete example of making state inspectable while keeping the resulting account data local.
 
-## Engineering approach
+The [profile repository](https://github.com/goroshillc/goroshillc) contains this page and its original artwork.
+Its publication check rejects local paths, private network addresses, external image hosts, and active SVG content before changes land.
 
-- **Correctness:** typed inputs, bounded operations, and explicit failure states.
-- **Integration:** direct APIs and existing components where they fit the problem.
-- **Verification:** failure-case tests, reproducible checks, and separate deployment evidence.
-- **Maintainability:** focused changes, documented tradeoffs, and durable handoffs.
-- **Accountability:** AI assists implementation; review and verification remain my responsibility.
+## How I build
 
-## Opportunities
+```text
+Understand the source
+        ↓
+State the invariant
+        ↓
+Build a bounded path
+        ↓
+Test failure as carefully as success
+        ↓
+Verify the behavior people actually see
+```
 
-I am interested in **fully remote** roles in backend development, business automation, internal tools, and applied AI.
-Business source code and operational records remain private; I can discuss the architecture and engineering decisions behind the work.
+I prefer explicit failure to a result that only looks complete.
+I keep a distinction between an idea, a source change, a passing test, and a working product.
+For operational and financial work, uncertainty stays visible until the evidence resolves it.
+
+<details>
+<summary><strong>Engineering boundaries I care about</strong></summary>
+
+- **Correctness:** checked arithmetic, validated input, and errors that identify a failed boundary.
+- **Privacy:** public explanations do not expose private records, credentials, internal endpoints, or unreleased implementation details.
+- **Reviewability:** small changes, clear ownership, reproducible checks, and honest acceptance limits.
+- **Usability:** the interface should help someone understand the next decision without knowing the entire system first.
+
+</details>
+
+## Connect
+
+I am open to **fully remote** software roles involving backend systems, business automation, internal tools, and applied AI.
+You can reach me through [LinkedIn](https://www.linkedin.com/in/stefano-theofanous-a418a4426/).
+I can discuss the architecture and engineering decisions behind private work without exposing customer, family, or business records.
 
 ---
 
-By the grace of God, I give all glory to Jesus Christ.
+<sub>© 2026 Goroshi LLC. All rights reserved. Public overview only.</sub>
+
+<sub>By the grace of God, I give all glory to Jesus Christ.</sub>

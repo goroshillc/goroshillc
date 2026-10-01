@@ -1,0 +1,24 @@
+name: Public profile guard
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4 tag resolved 2026-10-01
+        with:
+          persist-credentials: false
+      - name: Compile and test the publication guard
+        run: |
+          rustc --edition=2024 --test tools/profile_guard.rs -o /tmp/profile-guard-tests
+          /tmp/profile-guard-tests
+      - name: Check the public page and artwork
+        run: |
+          rustc --edition=2024 tools/profile_guard.rs -o /tmp/profile-guard
+          /tmp/profile-guard
