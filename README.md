@@ -1,86 +1,86 @@
 <div align="center">
 
-![Goroshi LLC. Build with proof. A ring surrounds a precise architectural grid.](assets/hero.svg)
+![Goroshi LLC. An original crimson-on-black engraved triangle frames a timber cross beside Build with proof.](assets/hero.svg)
 
 # Stefano Theofanous
 
 **Founder, Goroshi LLC** · Software engineering · Business automation · AI developer tooling
 
-[Explore the work](#selected-work) · [How I build](#how-i-build) · [Public proof](#public-proof) · [Connect](#connect)
+![Rust-first. Source, test, observe. Fully remote.](assets/proof-badges.svg)
+
+[The work](#selected-work) · [Inspect the proof](#public-proof) · [Engineering method](#how-i-build) · [Connect](#connect)
 
 </div>
 
----
-
-I turn messy operational work into software that people can inspect, use, and trust.
-My focus is the connection between **source data**, **explicit business rules**, and **clear interfaces**.
-Rust, APIs, and AI-assisted development are tools in that work; a passing build is only one part of proving a system behaves as intended.
+I build software for operational work where the **source**, the **rule**, and the **result** all need to be understood.
+My projects span restaurant and property workflows, document processing, and tools for accountable AI-assisted development.
+I use Rust for new systems and distinguish source code, passing tests, integration, and observed behavior.
 
 ## Selected work
 
-| Domain | The problem | My engineering focus |
+| Area | Real problem | Engineering response |
 | :--- | :--- | :--- |
-| **Business operations** | Restaurant and property workflows begin with records from different sources. | Traceable inputs, exact allocation, typed money, and reviewable outputs. |
-| **Developer platforms** | AI-assisted work can lose context, duplicate ownership, or report completion too early. | Isolated workspaces, explicit task ownership, bounded context, and evidence tied to each claim. |
-| **Geospatial decisions** | A nearby feature on a map can look more certain than the source permits. | Provenance, exclusions, and visible unknowns in energy-site screening. |
+| **Operational software** | Sales, receipts, property records, and labor workflows | Traceable inputs, exact accounting, and outputs a person can review. |
+| **Developer platforms** | AI-assisted engineering with shared repositories and agents | Bounded ownership, reproducible checks, and evidence that integration worked. |
+| **Data and decisions** | OCR, geospatial screening, and local game telemetry | Provenance, freshness, explicit uncertainty, and a clear next action. |
 
-<details>
-<summary><strong>What these terms mean</strong></summary>
-
-**Typed money** means amounts are represented as integer cents with operations designed to preserve accounting invariants.
-**Provenance** means a conclusion retains a path back to the source and method that produced it.
-**Evidence of completion** separates source review and tests from integration, installation, and observed behavior.
-
-</details>
-
-These are architectural descriptions of private work at different stages.
-They are not claims that every component is public, deployed, or available to run.
+These are architectural descriptions of private work at different stages, not claims that every component is public, deployed, or available to run.
+Customer records, family information, and internal systems stay private.
 
 ## Public proof
 
-**[Local Data Exporter](https://github.com/goroshillc/local-data-exporter)** is a RuneLite plugin that writes local account snapshots to JSON for personal tracking and analysis.
-Its public repository documents the exported data and files.
-The plugin is a concrete example of making state inspectable while keeping the resulting account data local.
+**This profile is a working example.**
+The [repository](https://github.com/goroshillc/goroshillc) includes original, locally hosted vector artwork, a [Rust publication guard](tools/profile_guard.rs), and a [GitHub Actions check](.github/workflows/profile-guard.yml).
+The guard rejects selected private paths and network addresses, remote image hosts, and active SVG content.
+Read the code and its tests to see exactly what it checks.
+It is a bounded check, not a claim that any scanner catches every possible leak.
 
-The [profile repository](https://github.com/goroshillc/goroshillc) contains this page and its original artwork.
-Its publication check rejects local paths, private network addresses, external image hosts, and active SVG content before changes land.
+**[Local Data Exporter](https://github.com/goroshillc/local-data-exporter)** is a maintenance fork of [GoblinTek's BSD-2-Clause project](https://github.com/GoblinTek/local-data-exporter).
+It writes local account and gameplay snapshots to JSON; the exported account data remains local to the user.
+I identify the fork's origin because maintenance and original architecture are different accomplishments.
+I am also developing a separate first-party exporter.
+Its source is private and its client integration is not yet verified, so I do not present it as a finished public product.
+
+**A five-minute review path:** inspect this README, open the publication guard, read its failure-case tests, then check the Actions result for the commit you are reviewing.
+That path shows what is public and verifiable without asking you to trust an activity graph, a vanity metric, or private repository claims.
 
 ## How I build
 
 ```text
-Understand the source
-        ↓
-State the invariant
-        ↓
-Build a bounded path
-        ↓
-Test failure as carefully as success
-        ↓
-Verify the behavior people actually see
+Understand the actual source
+    ↓
+State the invariant and failure modes
+    ↓
+Build a small, owned implementation path
+    ↓
+Test both valid and bad inputs
+    ↓
+Check the integrated behavior people see
 ```
 
-I prefer explicit failure to a result that only looks complete.
-I keep a distinction between an idea, a source change, a passing test, and a working product.
-For operational and financial work, uncertainty stays visible until the evidence resolves it.
+I prefer typed values, explicit errors, small reviewable changes, and a record of what was verified.
+For money, that means integer-cent arithmetic and reconciled source records.
+For AI-assisted work, it means giving an agent a bounded task, preserving its output, and independently checking the result.
+For a public claim, it means distinguishing source, test, deployment, and observed behavior.
 
 <details>
-<summary><strong>Engineering boundaries I care about</strong></summary>
+<summary><strong>Engineering principles in more detail</strong></summary>
 
-- **Correctness:** checked arithmetic, validated input, and errors that identify a failed boundary.
-- **Privacy:** public explanations do not expose private records, credentials, internal endpoints, or unreleased implementation details.
-- **Reviewability:** small changes, clear ownership, reproducible checks, and honest acceptance limits.
-- **Usability:** the interface should help someone understand the next decision without knowing the entire system first.
+- **Correctness:** model important constraints in types; reject malformed input; test the failure path.
+- **Provenance:** keep a result tied to its source and method so it can be checked later.
+- **Ownership:** assign one editor to a file or component at a time; make handoffs explicit.
+- **Security:** publish curated explanations and original code without exposing private operational data.
+- **Usability:** make the next action understandable without requiring the user to know the entire system.
 
 </details>
 
 ## Connect
 
-I am open to **fully remote** software roles involving backend systems, business automation, internal tools, and applied AI.
-You can reach me through [LinkedIn](https://www.linkedin.com/in/stefano-theofanous-a418a4426/).
-I can discuss the architecture and engineering decisions behind private work without exposing customer, family, or business records.
+I am interested in **fully remote** software engineering roles involving backend systems, business automation, internal tools, or applied AI.
+[Connect with me on LinkedIn](https://www.linkedin.com/in/stefano-theofanous-a418a4426/).
+I can discuss the design and tradeoffs behind private work while keeping the underlying records private.
 
 ---
 
-<sub>© 2026 Goroshi LLC. All rights reserved. Public overview only.</sub>
-
-<sub>By the grace of God, I give all glory to Jesus Christ.</sub>
+<sub>© 2026 Goroshi LLC. Public overview and original artwork.</sub>
+<sub>By the grace of God, I give all glory to Jesus Christ. Non nobis Domine.</sub>

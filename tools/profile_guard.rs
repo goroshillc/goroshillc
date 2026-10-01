@@ -5,7 +5,7 @@
 use std::fs;
 use std::path::Path;
 
-fn check(readme: &str, artwork: &str) -> Result<(), String> {
+fn check(readme: &str, artwork: &str, badges: &str) -> Result<(), String> {
     let lower = readme.to_ascii_lowercase();
     for forbidden in [
         "/users/",
@@ -41,8 +41,10 @@ fn check(readme: &str, artwork: &str) -> Result<(), String> {
     }
 
     for line in readme.lines().filter(|line| line.contains("![")) {
-        if !line.contains("](assets/hero.svg)") {
-            return Err("profile image must be the reviewed local artwork".into());
+        let line = line.trim();
+        let allowed = ["](assets/hero.svg)", "](assets/proof-badges.svg)"];
+        if line.matches("![").count() != 1 || !allowed.iter().any(|suffix| line.ends_with(suffix)) {
+            return Err("profile image must be a reviewed local asset".into());
         }
     }
     for required in [
@@ -60,10 +62,16 @@ fn check(readme: &str, artwork: &str) -> Result<(), String> {
             ));
         }
     }
-    if readme.len() > 16_384 || artwork.len() > 32_768 {
+    if readme.len() > 16_384 || artwork.len() > 32_768 || badges.len() > 8_192 {
         return Err("profile asset exceeds bounded publication size".into());
     }
 
+    check_svg(artwork)?;
+    check_svg(badges)?;
+    Ok(())
+}
+
+fn check_svg(artwork: &str) -> Result<(), String> {
     let svg = artwork
         .replace("http://www.w3.org/2000/svg", "")
         .to_ascii_lowercase();
@@ -114,7 +122,8 @@ fn check(readme: &str, artwork: &str) -> Result<(), String> {
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let readme = fs::read_to_string(Path::new("README.md"))?;
     let artwork = fs::read_to_string(Path::new("assets/hero.svg"))?;
-    check(&readme, &artwork)?;
+    let badges = fs::read_to_string(Path::new("assets/proof-badges.svg"))?;
+    check(&readme, &artwork, &badges)?;
     println!("PROFILE PUBLICATION GUARD PASS");
     Ok(())
 }
@@ -128,13 +137,13 @@ mod tests {
 
     #[test]
     fn accepts_a_local_accessible_public_profile() {
-        assert!(check(VALID, SVG).is_ok());
+        assert!(check(VALID, SVG, SVG).is_ok());
     }
 
     #[test]
     fn refuses_local_paths_and_private_network_addresses() {
         for marker in ["/Users/name/secret", "10.0.0.1", "127.0.0.1", "file://data"] {
-            assert!(check(&format!("{VALID}{marker}"), SVG).is_err());
+            assert!(check(&format!("{VALID}{marker}"), SVG, SVG).is_err());
         }
     }
 
@@ -143,6 +152,7 @@ mod tests {
         assert!(
             check(
                 &format!("{VALID}\n![x](https://tracker.example/x.svg)"),
+                SVG,
                 SVG
             )
             .is_err()
@@ -150,12 +160,14 @@ mod tests {
         assert!(
             check(
                 VALID,
-                &SVG.replace("</svg>", "<script>alert(1)</script></svg>")
+                &SVG.replace("</svg>", "<script>alert(1)</script></svg>"),
+                SVG
             )
             .is_err()
         );
-        assert!(check(VALID, &SVG.replace("</svg>", "<image href=\"x\"/></svg>")).is_err());
-        assert!(check(VALID, &SVG.replace("</svg>", "<path style=\"x\"/></svg>")).is_err());
+        assert!(check(VALID, &SVG.replace("</svg>", "<image href=\"x\"/></svg>"), SVG).is_err());
+        assert!(check(VALID, &SVG.replace("</svg>", "<path style=\"x\"/></svg>"), SVG).is_err());
+        assert!(check(VALID, SVG, &SVG.replace("</svg>", "<script/></svg>")).is_err());
     }
 
     #[test]
@@ -163,10 +175,17 @@ mod tests {
         assert!(
             check(
                 &VALID.replace("not claims that every component is public, deployed", ""),
+                SVG,
                 SVG
             )
             .is_err()
         );
-        assert!(check(&format!("{VALID} shields.io"), SVG).is_err());
+        assert!(check(&format!("{VALID} shields.io"), SVG, SVG).is_err());
+    }
+
+    #[test]
+    fn accepts_only_exact_local_badge_markdown() {
+        assert!(check(&format!("{VALID}\n![Proof](assets/proof-badges.svg)"), SVG, SVG).is_ok());
+        assert!(check(&format!("{VALID}\n![Proof](assets/proof-badges.svg) ![Tracker](https://x.invalid)"), SVG, SVG).is_err());
     }
 }

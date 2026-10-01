@@ -1,41 +1,70 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 440" role="img" aria-labelledby="title desc">
-  <title id="title">Goroshi LLC - build with proof</title>
-  <desc id="desc">A luminous ring intersects a measured grid beside the words Goroshi LLC and Build with proof.</desc>
+  <title id="title">Goroshi LLC - Build with proof</title>
+  <desc id="desc">Original black-ink woodcut-inspired banner. A rough-hewn cross stands within a monumental triangle above an engraved hillside. The words Build with proof sit beside it.</desc>
   <defs>
-    <linearGradient id="night" x2="1" y2="1">
-      <stop offset="0" stop-color="#080d15"/>
-      <stop offset="0.58" stop-color="#111b29"/>
-      <stop offset="1" stop-color="#1b2230"/>
-    </linearGradient>
-    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#f4e3ae"/>
-      <stop offset="0.47" stop-color="#b89a61"/>
-      <stop offset="1" stop-color="#f2d48e"/>
-    </linearGradient>
-    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
-      <path d="M36 0H0V36" fill="none" stroke="#d6c9a8" stroke-opacity=".075"/>
+    <clipPath id="stone"><path d="M1120 52 866 396h508Z"/></clipPath>
+    <pattern id="hatch" width="13" height="13" patternUnits="userSpaceOnUse" patternTransform="rotate(43)">
+      <path d="M0 0V13M5 0V13" stroke="#A6192E" stroke-width="1.2" opacity=".48"/>
+    </pattern>
+    <pattern id="fine" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(-38)">
+      <path d="M0 0V8" stroke="#BE1930" stroke-width=".75" opacity=".55"/>
+    </pattern>
+    <pattern id="cut" width="10" height="10" patternUnits="userSpaceOnUse">
+      <path d="M0 8 3 2M6 10 10 3" stroke="#E11D35" stroke-width=".9" opacity=".5"/>
     </pattern>
   </defs>
-  <rect width="1400" height="440" fill="url(#night)"/>
-  <rect width="1400" height="440" fill="url(#grid)"/>
-  <path d="M28 28H1372V412H28Z" fill="none" stroke="#bca977" stroke-opacity=".42"/>
-  <path d="M45 45H1355V395H45Z" fill="none" stroke="#bca977" stroke-opacity=".16"/>
-  <path d="M90 335H770" stroke="#bca977" stroke-opacity=".48"/>
-  <path d="M90 354H520" stroke="#bca977" stroke-opacity=".22"/>
-  <circle cx="1102" cy="220" r="144" fill="none" stroke="#c2a66b" stroke-opacity=".12" stroke-width="23"/>
-  <circle cx="1102" cy="220" r="144" fill="none" stroke="url(#ring)" stroke-width="3"/>
-  <circle cx="1102" cy="220" r="125" fill="none" stroke="#f1dbac" stroke-opacity=".4"/>
-  <circle cx="1102" cy="220" r="93" fill="none" stroke="#e2c787" stroke-opacity=".18"/>
-  <path d="M958 220H1246M1102 76V364" stroke="#f1dbac" stroke-opacity=".29"/>
-  <path d="M1005 123L1199 317M1199 123L1005 317" stroke="#f1dbac" stroke-opacity=".14"/>
-  <path d="M1102 160L1148 220L1102 280L1056 220Z" fill="none" stroke="url(#ring)" stroke-width="2"/>
-  <circle cx="1102" cy="220" r="10" fill="#f2d48e"/>
-  <circle cx="1102" cy="76" r="5" fill="#f2d48e"/>
-  <circle cx="1246" cy="220" r="5" fill="#f2d48e"/>
-  <circle cx="1102" cy="364" r="5" fill="#f2d48e"/>
-  <circle cx="958" cy="220" r="5" fill="#f2d48e"/>
-  <text x="91" y="113" fill="#e7cf95" font-family="Georgia, 'Times New Roman', serif" font-size="19" letter-spacing="7">GOROSHI LLC  /  EST. BY STEFANO THEOFANOUS</text>
-  <text x="86" y="219" fill="#f7f4eb" font-family="Georgia, 'Times New Roman', serif" font-size="83" letter-spacing="3">Build with proof.</text>
-  <text x="91" y="279" fill="#c5cbd2" font-family="Arial, Helvetica, sans-serif" font-size="23" letter-spacing="2">SOFTWARE ENGINEERING  ·  BUSINESS AUTOMATION  ·  AI TOOLING</text>
-  <text x="91" y="383" fill="#d9c28c" font-family="Arial, Helvetica, sans-serif" font-size="15" letter-spacing="3">SOURCE  /  INVARIANT  /  TEST  /  OBSERVED RESULT</text>
+
+  <rect width="1400" height="440" fill="#000000"/>
+  <path d="M24 20H1376M24 25H1376M24 415H1376M24 420H1376" stroke="#D91F37" stroke-width="2"/>
+  <path d="M24 25v26M1376 25v26M24 389v26M1376 389v26" stroke="#D91F37" stroke-width="2"/>
+  <path d="M44 38h638M44 401h638" stroke="#D91F37" stroke-width="1"/>
+
+  <text x="48" y="104" fill="#D91F37" font-family="Georgia, 'Times New Roman', serif" font-size="27" letter-spacing="9">GOROSHI LLC</text>
+  <path d="M48 120h617" stroke="#D91F37" stroke-width="4"/>
+  <path d="M48 127h617" stroke="#D91F37" stroke-width="1"/>
+  <text x="42" y="228" fill="#D91F37" font-family="Georgia, 'Times New Roman', serif" font-size="79" font-weight="700" letter-spacing="-1">BUILD WITH</text>
+  <text x="42" y="310" fill="#D91F37" font-family="Georgia, 'Times New Roman', serif" font-size="79" font-weight="700" letter-spacing="-1">PROOF.</text>
+  <path d="M48 333h617" stroke="#D91F37" stroke-width="1.6"/>
+  <text x="48" y="360" fill="#D91F37" font-family="Georgia, 'Times New Roman', serif" font-size="16" letter-spacing="2.2">SOFTWARE  ·  OPERATIONS  ·  VERIFIED DELIVERY</text>
+  <text x="48" y="390" fill="#F02A43" font-family="Georgia, 'Times New Roman', serif" font-size="14" letter-spacing="3.2">NON NOBIS DOMINE  ·  PSALM 115:1</text>
+
+  <g clip-path="url(#stone)">
+    <rect x="860" y="50" width="520" height="348" fill="#000000"/>
+    <path d="M1120 52 866 396h508Z" fill="url(#hatch)" opacity=".42"/>
+
+    <!-- Irregular engraving bands imitate cut marks, not a photographic source. -->
+    <g fill="none" stroke="#D91F37" stroke-linecap="round">
+      <path d="M849 338q133-105 271-270 133 163 273 270" stroke-width="2.1"/>
+      <path d="M846 357q139-115 274-281 135 167 278 281" stroke-width="1.35"/>
+      <path d="M844 378q143-123 276-294 139 174 281 294" stroke-width="1.8"/>
+      <path d="M929 327q97-109 190-223 92 113 193 223" stroke-width="1"/>
+      <path d="M951 334q89-108 168-212 81 102 171 212" stroke-width="1.1"/>
+      <path d="M967 340q78-103 152-200 73 97 152 200" stroke-width=".9"/>
+    </g>
+
+    <g stroke="#D91F37" stroke-linecap="round" opacity=".88">
+      <path d="M1116 128 1097 213M1119 127 1120 210M1122 127 1141 213M1109 131 1066 204M1129 131 1173 204M1102 141 1047 203M1135 141 1192 203M1091 157 1026 209M1147 157 1214 209M1078 176 1006 220M1159 176 1234 220" stroke-width="1.4"/>
+      <path d="M1030 230 986 248M1210 230 1254 248M1016 250 976 264M1225 250 1265 264M1000 271 961 284M1241 271 1280 284" stroke-width="1"/>
+      <path d="M1007 188 983 196M1230 188 1254 196M996 205 972 215M1243 205 1267 215" stroke-width=".9"/>
+    </g>
+
+    <!-- The cross is drawn as a timber silhouette with cut-grain marks. -->
+    <path d="m1101 141 33 2-4 64 58-2 2 31-62 2-4 137-28 2-5-137-61-3 2-31 60 2Z" fill="#BE1930"/>
+    <path d="m1101 141 33 2-4 64 58-2 2 31-62 2-4 137-28 2-5-137-61-3 2-31 60 2Z" fill="url(#cut)"/>
+    <path d="m1108 150 14 1-1 57m-18 6 12 1m30 1 30-2m-66 19 14 1m-15 14 4 92m11-90-1 94" fill="none" stroke="#000000" stroke-width="1.2" opacity=".7"/>
+    <path d="M1097 145 1093 202M1128 145 1125 204M1042 212l43 2M1142 213l37-2" fill="none" stroke="#000000" stroke-width=".8" opacity=".45"/>
+
+    <!-- Rugged ground and dense cross-hatching give the lower register print weight. -->
+    <path d="M858 369q89-24 152-25 47 4 75 16 42-24 84-15 45-4 81 11 62-1 135 23v37H858Z" fill="#A6192E"/>
+    <path d="M858 369q89-24 152-25 47 4 75 16 42-24 84-15 45-4 81 11 62-1 135 23v37H858Z" fill="url(#cut)"/>
+    <path d="M857 376q88-20 152-20 46 2 77 17 35-21 82-17 44-3 83 13 64 0 134 21" fill="none" stroke="#000000" stroke-width="1.4" opacity=".72"/>
+    <path d="M870 391q93-22 164-14 29 2 52 14m68-14q47-7 98 9 74-4 124 16" fill="none" stroke="#000000" stroke-width=".8" opacity=".6"/>
+    <path d="M921 301h400v76H921Z" fill="url(#fine)" opacity=".36"/>
+  </g>
+
+  <path d="M1120 52 866 396h508Z" fill="none" stroke="#D91F37" stroke-width="8" stroke-linejoin="miter"/>
+  <path d="M1120 69 887 385h466Z" fill="none" stroke="#000000" stroke-width="3"/>
+  <path d="M1120 82 904 375h432Z" fill="none" stroke="#D91F37" stroke-width="1.6"/>
+  <path d="M735 48v344" stroke="#D91F37" stroke-width="1.2"/>
+  <path d="M747 48v344" stroke="#D91F37" stroke-width=".6"/>
 </svg>
