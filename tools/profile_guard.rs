@@ -5,8 +5,11 @@
 use std::fs;
 use std::path::Path;
 
+const HERO_PICTURE: &str = "<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"assets/hero.svg\">\n  <source media=\"(prefers-color-scheme: light)\" srcset=\"assets/hero-light.svg\">\n  <img src=\"assets/hero-light.svg\" alt=\"Goroshi LLC: systems with roots. Original architectural tree with branching systems and grounded roots. Built to be understood. Designed to hold up.\">\n</picture>";
+
 fn check(readme: &str, artwork: &str) -> Result<(), String> {
-    let lower = readme.to_ascii_lowercase();
+    // Permit only the reviewed local theme switch; other image HTML stays forbidden.
+    let lower = readme.replace(HERO_PICTURE, "").to_ascii_lowercase();
     for forbidden in [
         "/users/",
         "/private/",
@@ -16,6 +19,8 @@ fn check(readme: &str, artwork: &str) -> Result<(), String> {
         "<script",
         "<iframe",
         "<img",
+        "<picture",
+        "<source",
         "127.0.0.1",
         "localhost:",
         "192.168.",
@@ -114,14 +119,19 @@ fn check(readme: &str, artwork: &str) -> Result<(), String> {
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let readme = fs::read_to_string(Path::new("README.md"))?;
     let artwork = fs::read_to_string(Path::new("assets/hero.svg"))?;
+    let light_artwork = fs::read_to_string(Path::new("assets/hero-light.svg"))?;
+    if readme.matches(HERO_PICTURE).count() != 1 {
+        return Err("README must contain exactly one reviewed light/dark hero".into());
+    }
     check(&readme, &artwork)?;
+    check(&readme, &light_artwork)?;
     println!("PROFILE PUBLICATION GUARD PASS");
     Ok(())
 }
 
 #[cfg(test)]
 mod tests {
-    use super::check;
+    use super::{HERO_PICTURE, check};
 
     const VALID: &str = "# Stefano Theofanous\n## Selected work\n## Public proof\n## How I build\n## Connect\nhttps://github.com/goroshillc/local-data-exporter\nnot claims that every component is public, deployed\n![Art](assets/hero.svg)";
     const SVG: &str = "<svg xmlns=\"http://www.w3.org/2000/svg\"><title>Art</title><desc>Art description</desc></svg>";
@@ -129,6 +139,16 @@ mod tests {
     #[test]
     fn accepts_a_local_accessible_public_profile() {
         assert!(check(VALID, SVG).is_ok());
+    }
+
+    #[test]
+    fn accepts_only_the_exact_local_theme_switch() {
+        assert!(check(&format!("{VALID}\n{HERO_PICTURE}"), SVG).is_ok());
+        for replacement in ["https://tracker.example/x.svg", "assets/unreviewed.svg"] {
+            let changed = HERO_PICTURE.replace("assets/hero-light.svg", replacement);
+            assert!(check(&format!("{VALID}\n{changed}"), SVG).is_err());
+        }
+        assert!(check(&format!("{VALID}\n<img src=\"assets/hero.svg\">"), SVG).is_err());
     }
 
     #[test]
