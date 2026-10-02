@@ -6,6 +6,8 @@
   <img src="assets/hero-light.svg" alt="Goroshi LLC: systems with roots. Original architectural tree with branching systems and grounded roots. Built to be understood. Designed to hold up.">
 </picture>
 
+<sub>Light/dark hero concept inspired by Jessica, who suggested adapting the artwork to the viewer's theme.</sub>
+
 # Stefano Theofanous
 
 **Founder, Goroshi LLC**
