@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 720" role="img" aria-labelledby="title desc">
+<title id="title">Goroshi LLC - systems with roots</title>
+<desc id="desc">Original monochrome architectural tree. Strong roots rise into a branching canopy beside the words Systems with roots. Software, operations, and evidence.</desc>
+<defs><linearGradient id="field" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fafbfc"/><stop offset="1" stop-color="#edf0f3"/></linearGradient><linearGradient id="ink" gradientUnits="userSpaceOnUse" x1="0" y1="590" x2="0" y2="140"><stop stop-color="#737b85"/><stop offset=".6" stop-color="#353d48"/><stop offset="1" stop-color="#111820"/></linearGradient></defs>
+<rect width="1440" height="720" fill="url(#field)"/>
+<rect x="24" y="24" width="1392" height="672" fill="none" stroke="#9aa3ad" stroke-opacity=".45"/>
+<path d="M64 118H1376M64 600H1376" stroke="#7a8592" stroke-opacity=".5"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#35404c"><text x="64" y="86" font-size="27" letter-spacing="5">GOROSHI LLC</text><text x="1376" y="86" text-anchor="end" font-size="22" letter-spacing="3">STEFANO THEOFANOUS</text></g>
+<g fill="none" stroke="#4e5967" stroke-opacity=".08"><circle cx="1110" cy="360" r="210"/><circle cx="1110" cy="360" r="180"/><path d="M850 360H1380M1110 130V590"/></g>
+<g fill="none" stroke="url(#ink)" stroke-linecap="round" stroke-linejoin="round">
+<path d="M1110 541V306" stroke-width="6"/>
+<path d="M1110 415L1045 350V275L997 227M1110 387L1177 320V248L1223 202M1110 352L1080 322V221L1048 190M1110 320V190L1144 156" stroke-width="3"/>
+<path d="M1045 319L970 244H914M1045 291L1010 256V197M1177 295L1246 226H1300M1177 271L1208 240V166M1080 270L1034 224H977M1110 245L1155 200V159M1110 287L1138 259H1164" stroke-width="2"/>
+<path d="M970 244V216L945 191M1246 226V199L1270 175M1034 224V188M1080 240L1100 220M1110 190L1085 165" stroke-width="1.5"/>
+<path d="M1110 490L1075 525L1010 553H939M1110 506L1145 539L1220 563H1325M1110 525L1081 554L1050 580M1110 529L1137 557L1180 580M1075 525L1027 523L985 495M1145 539L1200 523L1242 490" stroke-width="2"/>
+</g>
+<g fill="#26313d"><circle cx="914" cy="244" r="4"/><circle cx="997" cy="227" r="4"/><circle cx="1048" cy="190" r="4"/><circle cx="1144" cy="156" r="4"/><circle cx="1223" cy="202" r="4"/><circle cx="1300" cy="226" r="4"/><circle cx="1208" cy="166" r="3"/><circle cx="1010" cy="197" r="3"/><circle cx="977" cy="224" r="3"/></g>
+<g font-family="Arial, Helvetica, sans-serif"><text x="64" y="173" fill="#566271" font-size="23" letter-spacing="4">SOFTWARE / OPERATIONS / EVIDENCE</text><text x="57" y="311" fill="#131a22" font-size="128" font-weight="700" letter-spacing="-7">Systems</text><text x="59" y="439" fill="#131a22" font-size="116" font-weight="700" letter-spacing="-6">with roots.</text><text x="66" y="521" fill="#485463" font-size="30">Built to be understood.</text><text x="66" y="563" fill="#485463" font-size="30">Designed to hold up.</text><text x="64" y="653" fill="#313c49" font-size="25" letter-spacing="2">SOURCE → RULES → SYSTEMS → PROOF</text><text x="1376" y="653" text-anchor="end" fill="#586473" font-size="23" letter-spacing="2">RUST · APIs · ORIGINAL WORK</text></g>
+</svg>

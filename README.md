@@ -1,6 +1,10 @@
 <div align="center">
 
-![Goroshi LLC: systems with roots. Original monochrome architectural tree with branching systems and grounded roots. Built to be understood. Designed to hold up.](assets/hero.svg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/hero.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg">
+  <img src="assets/hero-light.svg" alt="Goroshi LLC: systems with roots. Original architectural tree with branching systems and grounded roots. Built to be understood. Designed to hold up.">
+</picture>
 
 # Stefano Theofanous
 
