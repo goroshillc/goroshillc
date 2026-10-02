@@ -1,10 +1,14 @@
 <div align="center">
 
-![Goroshi LLC. Build with proof. A ring surrounds a precise architectural grid.](assets/hero.svg)
+![Goroshi LLC: build with proof. Gold architectural linework connects source, rules, systems, and evidence against a dark field. Software engineering, business automation, and AI tooling.](assets/hero.svg)
 
 # Stefano Theofanous
 
-**Founder, Goroshi LLC** · Software engineering · Business automation · AI developer tooling
+**Founder, Goroshi LLC**
+
+Software engineering · Business automation · AI developer tooling
+
+**Real operations. Explicit rules. Inspectable systems.**
 
 [Explore the work](#selected-work) · [How I build](#how-i-build) · [Public proof](#public-proof) · [Connect](#connect)
 
@@ -12,17 +16,25 @@
 
 ---
 
-I turn messy operational work into software that people can inspect, use, and trust.
+I build where software meets the work people actually have to do.
+Restaurant operations, property workflows, developer tools, and geospatial screening all share a hard problem: turning scattered inputs into a result someone can explain and act on.
 My focus is the connection between **source data**, **explicit business rules**, and **clear interfaces**.
-Rust, APIs, and AI-assisted development are tools in that work; a passing build is only one part of proving a system behaves as intended.
+
+**Rust** for typed boundaries and checked behavior.
+**APIs** for systems that work together.
+**AI-assisted development** with ownership, review, and evidence attached to the work.
 
 ## Selected work
 
-| Domain | The problem | My engineering focus |
-| :--- | :--- | :--- |
-| **Business operations** | Restaurant and property workflows begin with records from different sources. | Traceable inputs, exact allocation, typed money, and reviewable outputs. |
-| **Developer platforms** | AI-assisted work can lose context, duplicate ownership, or report completion too early. | Isolated workspaces, explicit task ownership, bounded context, and evidence tied to each claim. |
-| **Geospatial decisions** | A nearby feature on a map can look more certain than the source permits. | Provenance, exclusions, and visible unknowns in energy-site screening. |
+| **01 / Business systems** | **02 / Developer platforms** |
+| :--- | :--- |
+| Restaurant and property workflows start with records from different sources. | AI-assisted work needs clear ownership and a reliable definition of completion. |
+| **Engineering:** traceable inputs, exact allocation, typed money, and reviewable outputs. | **Engineering:** isolated workspaces, bounded context, explicit task ownership, and evidence tied to each claim. |
+
+| **03 / Geospatial decisions** | **04 / Observable state** |
+| :--- | :--- |
+| A nearby map feature can appear more certain than its source permits. | Useful analysis starts with a clear account of what the system observed. |
+| **Engineering:** provenance, exclusions, and visible unknowns in energy-site screening. | **Public example:** local JSON snapshots from the RuneLite plugin linked below. |
 
 <details>
 <summary><strong>What these terms mean</strong></summary>
@@ -38,26 +50,38 @@ They are not claims that every component is public, deployed, or available to ru
 
 ## Public proof
 
-**[Local Data Exporter](https://github.com/goroshillc/local-data-exporter)** is a RuneLite plugin that writes local account snapshots to JSON for personal tracking and analysis.
-Its public repository documents the exported data and files.
-The plugin is a concrete example of making state inspectable while keeping the resulting account data local.
+### Local Data Exporter
+
+**RuneLite plugin · Local JSON snapshots · Personal tracking and analysis**
+
+The [public repository](https://github.com/goroshillc/local-data-exporter) documents a plugin that writes local account snapshots to JSON.
+It makes state inspectable while keeping the resulting account data local.
+
+| Boundary | Decision |
+| :--- | :--- |
+| **Capture** | Export structured account snapshots. |
+| **Inspect** | Document the exported data and files. |
+| **Privacy** | Keep personal account output local. |
+
+**[Inspect the source and documentation →](https://github.com/goroshillc/local-data-exporter)**
+
+### This profile, reproducible
 
 The [profile repository](https://github.com/goroshillc/goroshillc) contains this page and its original artwork.
 Its publication check rejects local paths, private network addresses, external image hosts, and active SVG content before changes land.
+The visual is repository-owned SVG, with no remote statistics widget or tracking image dependency.
+
+**[Read the publication guard](https://github.com/goroshillc/goroshillc/blob/main/tools/profile_guard.rs)** · **[See the checks](https://github.com/goroshillc/goroshillc/actions)**
 
 ## How I build
 
-```text
-Understand the source
-        ↓
-State the invariant
-        ↓
-Build a bounded path
-        ↓
-Test failure as carefully as success
-        ↓
-Verify the behavior people actually see
-```
+| Step | The question that matters |
+| :--- | :--- |
+| **01 / Source** | What was actually observed, and where did it come from? |
+| **02 / Invariant** | What must remain true, including when input is bad? |
+| **03 / System** | Where do ownership, types, and interfaces enforce that rule? |
+| **04 / Verification** | Do failure cases fail clearly, and can the result be reproduced? |
+| **05 / Acceptance** | Does the behavior people actually see match the claim? |
 
 I prefer explicit failure to a result that only looks complete.
 I keep a distinction between an idea, a source change, a passing test, and a working product.
@@ -75,8 +99,16 @@ For operational and financial work, uncertainty stays visible until the evidence
 
 ## Connect
 
+<div align="center">
+
+### Build something that holds up.
+
 I am open to **fully remote** software roles involving backend systems, business automation, internal tools, and applied AI.
-You can reach me through [LinkedIn](https://www.linkedin.com/in/stefano-theofanous-a418a4426/).
+
+**[Connect on LinkedIn →](https://www.linkedin.com/in/stefano-theofanous-a418a4426/)**
+
+</div>
+
 I can discuss the architecture and engineering decisions behind private work without exposing customer, family, or business records.
 
 ---
