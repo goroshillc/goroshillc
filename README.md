@@ -1,6 +1,6 @@
 <div align="center">
 
-![Goroshi LLC: build with proof. Gold architectural linework connects source, rules, systems, and evidence against a dark field. Software engineering, business automation, and AI tooling.](assets/hero.svg)
+![Goroshi LLC: systems with roots. Original monochrome architectural tree with branching systems and grounded roots. Built to be understood. Designed to hold up.](assets/hero.svg)
 
 # Stefano Theofanous
 
@@ -8,7 +8,7 @@
 
 Software engineering · Business automation · AI developer tooling
 
-**Real operations. Explicit rules. Inspectable systems.**
+**Systems with roots. Work with evidence.**
 
 [Explore the work](#selected-work) · [How I build](#how-i-build) · [Public proof](#public-proof) · [Connect](#connect)
 
@@ -23,6 +23,14 @@ My focus is the connection between **source data**, **explicit business rules**,
 **Rust** for typed boundaries and checked behavior.
 **APIs** for systems that work together.
 **AI-assisted development** with ownership, review, and evidence attached to the work.
+
+### The working standard
+
+**Research before implementation. Interfaces people can use. Evidence before completion.**
+
+I study existing tools and primary documentation before choosing components.
+I design for observable behavior, clear ownership, recovery, and reproducible checks.
+The goal is software whose core operation does not depend on an AI agent being present.
 
 ## Selected work
 

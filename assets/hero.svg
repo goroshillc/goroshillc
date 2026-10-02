@@ -1,45 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 800" role="img" aria-labelledby="title desc">
-  <title id="title">Goroshi LLC - build with proof</title>
-  <desc id="desc">An original gold and midnight architectural composition. An orbital seal beside Build with proof. Four connected stages read source, rules, systems, and evidence. A schematic illustration, not a live status dashboard.</desc>
-  <defs>
-    <linearGradient id="night" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#080d13"/><stop offset=".6" stop-color="#101a25"/><stop offset="1" stop-color="#162737"/></linearGradient>
-    <linearGradient id="gold" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#92754b"/><stop offset=".48" stop-color="#d5ba7e"/><stop offset="1" stop-color="#f1dfb2"/></linearGradient>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#d4c296" stroke-opacity=".045"/></pattern>
-  </defs>
-  <rect width="1440" height="800" rx="18" fill="url(#night)"/>
-  <rect x="20" y="20" width="1400" height="760" rx="8" fill="url(#grid)"/>
-  <path d="M40 108V40H108M1332 40H1400V108M40 692V760H108M1332 760H1400V692" fill="none" stroke="#d5ba7e" stroke-width="2"/>
-  <path d="M64 64H1376V736H64Z" fill="none" stroke="#d5ba7e" stroke-opacity=".14"/>
-  <path d="M88 116H1352" stroke="#d5ba7e" stroke-opacity=".3"/>
-  <text x="88" y="97" fill="#dfc68e" font-family="Arial, Helvetica, sans-serif" font-size="23" letter-spacing="5">GOROSHI LLC</text>
-  <text x="1352" y="97" text-anchor="end" fill="#a9bac7" font-family="Arial, Helvetica, sans-serif" font-size="20" letter-spacing="3">STEFANO THEOFANOUS</text>
-  <path d="M886 152L1352 494M886 494L1352 152" stroke="#d5ba7e" stroke-opacity=".1"/>
-  <path d="M886 323H1352M1119 142V504" stroke="#d5ba7e" stroke-opacity=".16"/>
-  <circle cx="1119" cy="323" r="159" fill="none" stroke="#d5ba7e" stroke-opacity=".1" stroke-width="24"/>
-  <circle cx="1119" cy="323" r="171" fill="none" stroke="#d5ba7e" stroke-opacity=".28" stroke-dasharray="2 12"/>
-  <circle cx="1119" cy="323" r="159" fill="none" stroke="url(#gold)" stroke-width="2"/>
-  <circle cx="1119" cy="323" r="135" fill="none" stroke="#d5ba7e" stroke-opacity=".4"/>
-  <circle cx="1119" cy="323" r="100" fill="none" stroke="#d5ba7e" stroke-opacity=".23"/>
-  <path d="M1119 235L1184 323L1119 411L1054 323Z" fill="#d5ba7e" fill-opacity=".035" stroke="url(#gold)" stroke-width="2"/>
-  <path d="M1119 265L1162 323L1119 381L1076 323Z" fill="none" stroke="#d5ba7e" stroke-opacity=".45"/>
-  <path d="M1119 303V343M1099 323H1139" stroke="#f1dfb2" stroke-width="3"/>
-  <circle cx="1119" cy="164" r="5" fill="#f1dfb2"/><circle cx="1278" cy="323" r="5" fill="#f1dfb2"/><circle cx="1119" cy="482" r="5" fill="#f1dfb2"/><circle cx="960" cy="323" r="5" fill="#f1dfb2"/>
-  <path d="M88 171H132" stroke="#dfc68e" stroke-width="2"/>
-  <text x="150" y="178" fill="#a9bac7" font-family="Arial, Helvetica, sans-serif" font-size="21" letter-spacing="4">ENGINEERING / OPERATIONS</text>
-  <text x="82" y="285" fill="#f5f0e6" font-family="Georgia, 'Times New Roman', serif" font-size="103" letter-spacing="-2">Build with</text>
-  <text x="82" y="390" fill="#dfc68e" font-family="Georgia, 'Times New Roman', serif" font-size="103" letter-spacing="-2">proof.</text>
-  <text x="88" y="449" fill="#c0ccd6" font-family="Arial, Helvetica, sans-serif" font-size="27">Real operations. Explicit rules.</text>
-  <text x="88" y="488" fill="#c0ccd6" font-family="Arial, Helvetica, sans-serif" font-size="27">Inspectable systems.</text>
-  <path d="M88 542H1352" stroke="#d5ba7e" stroke-opacity=".3"/>
-  <path d="M260 635H1180" fill="none" stroke="#d5ba7e" stroke-opacity=".4"/>
-  <rect x="88" y="577" width="286" height="117" rx="4" fill="#101a25" stroke="#d5ba7e" stroke-opacity=".38"/>
-  <rect x="414" y="577" width="286" height="117" rx="4" fill="#101a25" stroke="#d5ba7e" stroke-opacity=".38"/>
-  <rect x="740" y="577" width="286" height="117" rx="4" fill="#101a25" stroke="#d5ba7e" stroke-opacity=".38"/>
-  <rect x="1066" y="577" width="286" height="117" rx="4" fill="#101a25" stroke="#d5ba7e" stroke-opacity=".38"/>
-  <path d="M385 629L391 635L385 641M711 629L717 635L711 641M1037 629L1043 635L1037 641" fill="none" stroke="#dfc68e" stroke-width="2"/>
-  <g font-family="Arial, Helvetica, sans-serif">
-    <g fill="#dfc68e" font-size="18" letter-spacing="3"><text x="112" y="608">01 / SOURCE</text><text x="438" y="608">02 / RULES</text><text x="764" y="608">03 / SYSTEMS</text><text x="1090" y="608">04 / EVIDENCE</text></g>
-    <g fill="#f5f0e6" font-size="26"><text x="112" y="647">Trace the input.</text><text x="438" y="647">State the invariant.</text><text x="764" y="647">Build the boundary.</text><text x="1090" y="647">Verify the result.</text></g>
-    <text x="88" y="732" fill="#a9bac7" font-size="19" letter-spacing="3">SOFTWARE ENGINEERING · BUSINESS AUTOMATION · AI TOOLING</text>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 720" role="img" aria-labelledby="title desc">
+<title id="title">Goroshi LLC - systems with roots</title>
+<desc id="desc">Original monochrome architectural tree. Strong roots rise into a branching canopy beside the words Systems with roots. Software, operations, and evidence.</desc>
+<defs><linearGradient id="field" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#08090b"/><stop offset="1" stop-color="#191c20"/></linearGradient><linearGradient id="ink" gradientUnits="userSpaceOnUse" x1="0" y1="590" x2="0" y2="140"><stop stop-color="#686e77"/><stop offset=".6" stop-color="#d7d9dd"/><stop offset="1" stop-color="#faf9f5"/></linearGradient></defs>
+<rect width="1440" height="720" fill="url(#field)"/>
+<rect x="24" y="24" width="1392" height="672" fill="none" stroke="#555b64" stroke-opacity=".45"/>
+<path d="M64 118H1376M64 600H1376" stroke="#666c75" stroke-opacity=".5"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#c9ccd1"><text x="64" y="86" font-size="27" letter-spacing="5">GOROSHI LLC</text><text x="1376" y="86" text-anchor="end" font-size="22" letter-spacing="3">STEFANO THEOFANOUS</text></g>
+<g fill="none" stroke="#aab0b8" stroke-opacity=".08"><circle cx="1110" cy="360" r="210"/><circle cx="1110" cy="360" r="180"/><path d="M850 360H1380M1110 130V590"/></g>
+<g fill="none" stroke="url(#ink)" stroke-linecap="round" stroke-linejoin="round">
+<path d="M1110 541V306" stroke-width="6"/>
+<path d="M1110 415L1045 350V275L997 227M1110 387L1177 320V248L1223 202M1110 352L1080 322V221L1048 190M1110 320V190L1144 156" stroke-width="3"/>
+<path d="M1045 319L970 244H914M1045 291L1010 256V197M1177 295L1246 226H1300M1177 271L1208 240V166M1080 270L1034 224H977M1110 245L1155 200V159M1110 287L1138 259H1164" stroke-width="2"/>
+<path d="M970 244V216L945 191M1246 226V199L1270 175M1034 224V188M1080 240L1100 220M1110 190L1085 165" stroke-width="1.5"/>
+<path d="M1110 490L1075 525L1010 553H939M1110 506L1145 539L1220 563H1325M1110 525L1081 554L1050 580M1110 529L1137 557L1180 580M1075 525L1027 523L985 495M1145 539L1200 523L1242 490" stroke-width="2"/>
+</g>
+<g fill="#e4e6e8"><circle cx="914" cy="244" r="4"/><circle cx="997" cy="227" r="4"/><circle cx="1048" cy="190" r="4"/><circle cx="1144" cy="156" r="4"/><circle cx="1223" cy="202" r="4"/><circle cx="1300" cy="226" r="4"/><circle cx="1208" cy="166" r="3"/><circle cx="1010" cy="197" r="3"/><circle cx="977" cy="224" r="3"/></g>
+<g font-family="Arial, Helvetica, sans-serif"><text x="64" y="173" fill="#a9aeb7" font-size="23" letter-spacing="4">SOFTWARE / OPERATIONS / EVIDENCE</text><text x="57" y="311" fill="#f5f4ef" font-size="128" font-weight="700" letter-spacing="-7">Systems</text><text x="59" y="439" fill="#f5f4ef" font-size="116" font-weight="700" letter-spacing="-6">with roots.</text><text x="66" y="521" fill="#b8bdc5" font-size="30">Built to be understood.</text><text x="66" y="563" fill="#b8bdc5" font-size="30">Designed to hold up.</text><text x="64" y="653" fill="#e0e2e5" font-size="25" letter-spacing="2">SOURCE → RULES → SYSTEMS → PROOF</text><text x="1376" y="653" text-anchor="end" fill="#959ca7" font-size="23" letter-spacing="2">RUST · APIs · ORIGINAL WORK</text></g>
 </svg>
