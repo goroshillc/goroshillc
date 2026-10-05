@@ -2,6 +2,8 @@
 
 # GOROSHI
 
+<img src="assets/metal-bone-white.jpg" alt="Goroshi metallic emblem with a bone-white skull, red lettering and black background" width="680">
+
 **Build. Endure. Rise.**
 
 [![All rights reserved](assets/rights.svg)](LICENSE)
