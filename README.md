@@ -8,6 +8,10 @@
 
 <sub>© 2026 Goroshi LLC. All rights reserved.</sub>
 
-<sub>By the grace of God, I give all glory to Jesus Christ.</sub>
+## NON NOBIS DOMINE
+
+> Not unto us, O LORD, not unto us, but unto thy name give glory, for thy mercy, and for thy truth's sake.
+>
+> Psalm 115:1 · KJV
 
 </div>
