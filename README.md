@@ -4,7 +4,7 @@
 
 # Stefano Theofanous
 
-**Founder, Goroshi LLC** &nbsp;·&nbsp; Rust engineer &nbsp;·&nbsp; business automation with AI-assisted workflows
+**Founder, Goroshi LLC** &nbsp;·&nbsp; business tooling &nbsp;·&nbsp; AI-assisted software engineering
 
 **Build. Endure. Rise.**
 
@@ -20,29 +20,33 @@
 
 ### What I build
 
-I build internal tools and business automation that support real small-business operations - document and receipt OCR, data pipelines, reporting, and the web services that tie them together.
+I build tools around practical operational problems: document and receipt processing, structured data, reporting, and the web services that connect them.
 
-I work Rust-first: typed money, compile-time-checked SQL, single static binaries, and tests that assert real values. I use AI-assisted development and multi-agent workflows to move quickly without trading away correctness.
+My focus is software that makes its inputs, failure modes, and evidence understandable. I use AI-assisted workflows alongside deterministic tools, explicit interfaces, and scoped checks. AI assistance is part of my process, not a substitute for explaining or verifying a result.
 
-Self-taught, shipping-focused, and comfortable owning a problem from the data layer to the browser.
+Core business source and operational data stay private. Public repositories are selected examples, with their current scope and limitations documented individually.
 
 ### Flagship
 
-**[goroshillc.com](https://goroshillc.com)** - my flagship: a secured, access-gated web platform for Goroshi LLC.
+**[Goroshi LLC](https://goroshillc.com)** - the access-gated work platform for my business tooling. It is not a public demo of private business records.
 
-### Tech
+### Selected public work
 
-![Rust](https://img.shields.io/badge/Rust-131014?style=flat-square&logo=rust&logoColor=white)
-![Axum](https://img.shields.io/badge/Axum-131014?style=flat-square)
-![Tokio](https://img.shields.io/badge/Tokio-131014?style=flat-square)
-![SQLx](https://img.shields.io/badge/SQLx-131014?style=flat-square)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-131014?style=flat-square&logo=postgresql&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-131014?style=flat-square&logo=sqlite&logoColor=white)
-![WebAssembly](https://img.shields.io/badge/WebAssembly-131014?style=flat-square&logo=webassembly&logoColor=white)
+**[PromptLens](https://github.com/goroshillc/prompt-lens)** - a local Rust CLI that preserves a request verbatim and attaches matching source references to an engineering brief. Deterministic term matching, not semantic search or model inference.
+
+**[Goroshi Local Export](https://github.com/goroshillc/goroshi-runelite-exporter)** - an OSRS/RuneLite interest project for bounded, read-only account snapshots written to local JSON. The published repository describes it as a candidate: not installed, not accepted on the Plugin Hub, and not live-validated.
+
+Each repository's own documentation is the source for its implementation, checks, and limitations. Source presence, a passing test, and accepted live behavior are different milestones.
+
+### Engineering interests
+
+Rust and Python tooling, SQL-backed applications, data validation, reproducible checks, and accountable AI workflows. OSRS is a personal interest and an environment for telemetry and data-interface projects; business tooling is the professional focus.
 
 ### Open to work
 
-Open to fully remote software roles. The fastest way to reach me is right here on GitHub - [@goroshillc](https://github.com/goroshillc).
+Interested in fully remote software, automation, and developer-tooling opportunities. I welcome conversations about the problem, the implementation, and the evidence behind the result.
+
+Contact: [@goroshillc](https://github.com/goroshillc).
 
 ---
 
