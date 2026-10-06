@@ -18,7 +18,7 @@
 
 ### What I build
 
-Software that runs real businesses: a restaurant and a family property portfolio.
+I build software for restaurant operations, property management, and developer workflows.
 
 - **Document and receipt processing** - scanned statements and receipts turned into clean, reconciled records.
 - **Data pipelines and reporting** - integer-cent arithmetic and source-linked records.
