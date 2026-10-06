@@ -6,7 +6,7 @@
 
 **Founder, Goroshi LLC** &nbsp;·&nbsp; business tooling &nbsp;·&nbsp; AI-assisted software engineering
 
-**Build. Endure. Rise.**
+***In hoc signo vinces***
 
 [![goroshillc.com](https://img.shields.io/badge/goroshillc.com-131014?style=flat-square)](https://goroshillc.com)
 &nbsp;
