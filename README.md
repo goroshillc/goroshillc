@@ -4,15 +4,13 @@
 
 # Stefano Theofanous
 
-**Founder, Goroshi LLC** &nbsp;·&nbsp; business tooling &nbsp;·&nbsp; AI-assisted software engineering
+**Founder, Goroshi LLC** &nbsp;·&nbsp; Rust and AI systems for real business operations
 
 ***In hoc signo vinces***
 
 [![goroshillc.com](https://img.shields.io/badge/goroshillc.com-131014?style=flat-square)](https://goroshillc.com)
 &nbsp;
-[![Open to remote software roles](https://img.shields.io/badge/Open%20to%20remote%20software%20roles-8d162c?style=flat-square)](https://github.com/goroshillc)
-&nbsp;
-[![All rights reserved](assets/rights.svg)](LICENSE)
+[![Open to remote software roles](https://img.shields.io/badge/Open%20to%20remote%20software%20roles-a3111b?style=flat-square)](https://github.com/goroshillc)
 
 </div>
 
@@ -20,48 +18,37 @@
 
 ### What I build
 
-I build tools around practical operational problems: document and receipt processing, structured data, reporting, and the web services that connect them.
+Software that runs real businesses: a restaurant and a family property portfolio.
 
-My focus is software that makes its inputs, failure modes, and evidence understandable. I use AI-assisted workflows alongside deterministic tools, explicit interfaces, and scoped checks. AI assistance is part of my process, not a substitute for explaining or verifying a result.
+- **Document and receipt processing** - scanned statements and receipts turned into clean, reconciled records.
+- **Data pipelines and reporting** - money kept in integer cents, every total traceable to its source.
+- **AI agent tooling** - orchestration, request specification and auditing for a fleet of coding agents.
+- **Game tooling** - RuneLite plugins and route engines for Old School RuneScape.
 
-Working implementations and operational data stay private. Public case studies explain selected engineering problems, decisions, and evidence boundaries without distributing the source.
+### How I work
 
-### Flagship
+Tests first. Every change goes through checks before it lands. Strict linting in every language. Results measured, not assumed.
 
-**[Goroshi LLC](https://goroshillc.com)** - the access-gated work platform for my business tooling. It is not a public demo of private business records.
+### Stack
 
-### Selected public work
-
-**[Engineering showcase](https://github.com/goroshillc/goroshi-portfolio-showcase)** - documentation-only case studies for technical reviewers:
-
-- **Rust:** auditable developer tooling and request traceability.
-- **Python and SQL:** persistent workflow state and coordination boundaries.
-- **Java and OSRS:** a read-only local telemetry candidate, with integration limits stated explicitly.
-
-These describe technologies used in projects, not unverified mastery or credentials. Source presence, passing tests, and accepted live behavior are different milestones. Private implementation access is a separate owner decision.
-
-**[Public portfolio](https://goroshillc.github.io)** - a public-facing overview, separate from the access-gated business platform.
-
-### Engineering interests
-
-Rust and Python tooling, SQL-backed applications, data validation, reproducible checks, and accountable AI workflows. OSRS is a personal interest and an environment for telemetry and data-interface projects; business tooling is the professional focus.
+![Rust](https://img.shields.io/badge/Rust-131014?style=flat-square&logo=rust&logoColor=white)
+![Python](https://img.shields.io/badge/Python-131014?style=flat-square&logo=python&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-131014?style=flat-square&logo=typescript&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-131014?style=flat-square&logo=sqlite&logoColor=white)
+![Java](https://img.shields.io/badge/Java-131014?style=flat-square&logo=openjdk&logoColor=white)
 
 ### Open to work
 
-Interested in fully remote software, automation, and developer-tooling opportunities. I welcome conversations about the problem, the implementation, and the evidence behind the result.
-
-Contact: [@goroshillc](https://github.com/goroshillc).
+Fully remote software, automation and developer-tooling roles. Reach me here on GitHub.
 
 ---
 
 <div align="center">
 
-## NON NOBIS DOMINE
-
-> Not unto us, O LORD, not unto us, but unto thy name give glory, for thy mercy, and for thy truth's sake.
+> And whatsoever ye do, do it heartily, as to the Lord, and not unto men;
 >
-> Psalm 115:1 · KJV
+> Colossians 3:23 · KJV
 
-<sub>© 2026 Goroshi LLC. All rights reserved.</sub>
+<sub>© 2026 Stefano Theofanous and Goroshi LLC</sub>
 
 </div>
