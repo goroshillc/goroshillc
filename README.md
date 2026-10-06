@@ -24,7 +24,7 @@ I build tools around practical operational problems: document and receipt proces
 
 My focus is software that makes its inputs, failure modes, and evidence understandable. I use AI-assisted workflows alongside deterministic tools, explicit interfaces, and scoped checks. AI assistance is part of my process, not a substitute for explaining or verifying a result.
 
-Core business source and operational data stay private. Public repositories are selected examples, with their current scope and limitations documented individually.
+Working implementations and operational data stay private. Public case studies explain selected engineering problems, decisions, and evidence boundaries without distributing the source.
 
 ### Flagship
 
@@ -32,11 +32,15 @@ Core business source and operational data stay private. Public repositories are 
 
 ### Selected public work
 
-**[PromptLens](https://github.com/goroshillc/prompt-lens)** - a local Rust CLI that preserves a request verbatim and attaches matching source references to an engineering brief. Deterministic term matching, not semantic search or model inference.
+**[Engineering showcase](https://github.com/goroshillc/goroshi-portfolio-showcase)** - documentation-only case studies for technical reviewers:
 
-**[Goroshi Local Export](https://github.com/goroshillc/goroshi-runelite-exporter)** - an OSRS/RuneLite interest project for bounded, read-only account snapshots written to local JSON. The published repository describes it as a candidate: not installed, not accepted on the Plugin Hub, and not live-validated.
+- **Rust:** auditable developer tooling and request traceability.
+- **Python and SQL:** persistent workflow state and coordination boundaries.
+- **Java and OSRS:** a read-only local telemetry candidate, with integration limits stated explicitly.
 
-Each repository's own documentation is the source for its implementation, checks, and limitations. Source presence, a passing test, and accepted live behavior are different milestones.
+These describe technologies used in projects, not unverified mastery or credentials. Source presence, passing tests, and accepted live behavior are different milestones. Private implementation access is a separate owner decision.
+
+**[Public portfolio](https://goroshillc.github.io)** - a public-facing overview, separate from the access-gated business platform.
 
 ### Engineering interests
 
