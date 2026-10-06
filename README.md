@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1>✠</h1>
+<p align="center"><img src="assets/maltese-cross.svg" width="120" alt="Maltese cross"></p>
 
 # Stefano Theofanous
 
