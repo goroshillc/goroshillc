@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/metal-bone-white.jpg" alt="Goroshi LLC emblem - bone-white skull with red lettering on a black ground" width="640">
+<h1>☩</h1>
 
 # Stefano Theofanous
 
