@@ -21,13 +21,13 @@
 Software that runs real businesses: a restaurant and a family property portfolio.
 
 - **Document and receipt processing** - scanned statements and receipts turned into clean, reconciled records.
-- **Data pipelines and reporting** - money kept in integer cents, every total traceable to its source.
+- **Data pipelines and reporting** - integer-cent arithmetic and source-linked records.
 - **AI agent tooling** - orchestration, request specification and auditing for a fleet of coding agents.
 - **Game tooling** - RuneLite plugins and route engines for Old School RuneScape.
 
 ### How I work
 
-Tests first. Every change goes through checks before it lands. Strict linting in every language. Results measured, not assumed.
+I favor small, testable changes, strict tooling, and clear failure behavior. I use AI-assisted development alongside code review and reproducible checks, and distinguish working code from accepted live results.
 
 ### Stack
 
