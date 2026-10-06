@@ -1,10 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" role="img" aria-label="Goroshi crest">
-<defs>
-<radialGradient id="c" cx="300" cy="300" r="282" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ff2a3d"/><stop offset="0.6" stop-color="#a3111b"/><stop offset="1" stop-color="#5a060d"/></radialGradient>
-<radialGradient id="f" cx="300" cy="300" r="282" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2e2e33"/><stop offset="0.6" stop-color="#101012"/><stop offset="1" stop-color="#020203"/></radialGradient>
-<filter id="glow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="8"/></filter>
-</defs>
-<path d="M194.36,38.53 L405.64,38.53 L561.47,194.36 L561.47,405.64 L405.64,561.47 L194.36,561.47 L38.53,405.64 L38.53,194.36 Z" fill="none" stroke="#ff1f35" stroke-width="9" stroke-linejoin="miter" opacity="0.5" filter="url(#glow)"/>
-<path d="M194.36,38.53 L405.64,38.53 L561.47,194.36 L561.47,405.64 L405.64,561.47 L194.36,561.47 L38.53,405.64 L38.53,194.36 Z" fill="url(#f)" stroke="#efe9dc" stroke-width="5" stroke-linejoin="miter"/>
-<path d="M300.00,300.00 L194.36,38.53 L300.00,125.16 L405.64,38.53 Z M300.00,300.00 L561.47,194.36 L474.84,300.00 L561.47,405.64 Z M300.00,300.00 L405.64,561.47 L300.00,474.84 L194.36,561.47 Z M300.00,300.00 L38.53,405.64 L125.16,300.00 L38.53,194.36 Z" fill="url(#c)" stroke="#efe9dc" stroke-width="2.5" stroke-linejoin="miter"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" role="img" aria-label="Goroshi crest" shape-rendering="geometricPrecision"><path d="M194.36,38.53 L405.64,38.53 L561.47,194.36 L561.47,405.64 L405.64,561.47 L194.36,561.47 L38.53,405.64 L38.53,194.36 Z" fill="#101012"/><path d="M300.00,300.00 L194.36,38.53 L300.00,125.16 L405.64,38.53 Z M300.00,300.00 L561.47,194.36 L474.84,300.00 L561.47,405.64 Z M300.00,300.00 L405.64,561.47 L300.00,474.84 L194.36,561.47 Z M300.00,300.00 L38.53,405.64 L125.16,300.00 L38.53,194.36 Z" fill="#a3111b"/></svg>
