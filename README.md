@@ -65,6 +65,7 @@ OS        :: Arch Linux (Omarchy, Hyprland) · macOS
 AIM       :: theosis.
 AGENTS    :: 5,300+ AI agent sessions run · 3,600+ orchestrated subagents
           :: 210 sessions in a single day · 117 agents in one workflow
+TOKENS    :: 98B+ tokens processed across Claude and Codex (measured Oct 16 2026)
 FLEET     :: CLI: Claude Code · Codex · Gemini CLI · GitHub Copilot · OpenCode
           :: IDE & apps: Cursor · Antigravity · Claude · ChatGPT · Gemini
           :: local: Ollama · Qwen3.8 27B · Flash-Next
