@@ -1,75 +1,87 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
+    <img src="assets/banner-light.svg" width="100%" alt="Stefano Theofanous, Goroshi LLC">
+  </picture>
+</p>
+
 <div align="center">
 
-<p align="center"><img src="assets/maltese-cross.svg" width="120" alt="Cross"></p>
+### `PLATFORM & SYSTEMS ENGINEER // GOROSHI LLC`
+**`AI-NATIVE` · `FULL STACK, METAL TO BROWSER` · `SHIPS DAILY`**
 
-# Stefano Theofanous
+**Languages**
 
-**Founder, Goroshi LLC** &nbsp;·&nbsp; Rust engineer &nbsp;·&nbsp; always a student
+![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
+![Go](https://img.shields.io/badge/Go-000000?style=for-the-badge&logo=go&logoColor=00ADD8)
+![TypeScript](https://img.shields.io/badge/TypeScript-000000?style=for-the-badge&logo=typescript&logoColor=3178C6)
+![JavaScript](https://img.shields.io/badge/JavaScript-000000?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![Python](https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=python&logoColor=3776AB)
+![C](https://img.shields.io/badge/C-000000?style=for-the-badge&logo=c&logoColor=A8B9CC)
+![SQL](https://img.shields.io/badge/SQL-000000?style=for-the-badge&logo=sqlite&logoColor=white)
+![Lean 4](https://img.shields.io/badge/Lean_4-000000?style=for-the-badge)
 
-***In hoc signo vinces***
+**Infrastructure**
 
-[![goroshillc.com](https://img.shields.io/badge/goroshillc.com-131014?style=flat-square)](https://goroshillc.com)
-&nbsp;
-[![Open to remote software roles](https://img.shields.io/badge/Open%20to%20remote%20software%20roles-a3111b?style=flat-square)](https://github.com/goroshillc)
+![Docker](https://img.shields.io/badge/Docker-000000?style=for-the-badge&logo=docker&logoColor=2496ED)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-000000?style=for-the-badge&logo=kubernetes&logoColor=326CE5)
+![AWS](https://img.shields.io/badge/AWS_S3_·_CloudFront-000000?style=for-the-badge&logo=amazonwebservices&logoColor=FF9900)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-000000?style=for-the-badge&logo=githubactions&logoColor=2088FF)
+![RabbitMQ](https://img.shields.io/badge/RabbitMQ-000000?style=for-the-badge&logo=rabbitmq&logoColor=FF6600)
+![Linux](https://img.shields.io/badge/Arch_Linux-000000?style=for-the-badge&logo=archlinux&logoColor=1793D1)
+![Git](https://img.shields.io/badge/Git-000000?style=for-the-badge&logo=git&logoColor=F05032)
+![Neovim](https://img.shields.io/badge/Neovim-000000?style=for-the-badge&logo=neovim&logoColor=57A143)
+
+**Data & AI**
+
+![DataFusion](https://img.shields.io/badge/Apache_DataFusion-000000?style=for-the-badge&logo=apache&logoColor=white)
+![Arrow](https://img.shields.io/badge/Apache_Arrow-000000?style=for-the-badge&logo=apache&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-000000?style=for-the-badge&logo=pandas&logoColor=white)
+![CUDA](https://img.shields.io/badge/CUDA-000000?style=for-the-badge&logo=nvidia&logoColor=76B900)
+![Metal](https://img.shields.io/badge/Metal-000000?style=for-the-badge&logo=apple&logoColor=white)
+![Claude Code](https://img.shields.io/badge/Claude_Code-000000?style=for-the-badge&logo=anthropic&logoColor=white)
 
 </div>
 
 ---
 
-## Getting good is the fun part
+```text
+ID        :: goroshillc
+ORG       :: Goroshi LLC, founder
+EDGE      :: one engineer + a fleet of AI coding agents, every commit gated
+SCALE     :: one Rust workspace, 459 crates (cargo, Oct 16 2026)
+MONEY     :: i64 integer cents. never a float.
+COMPUTE   :: NVIDIA RTX 5080 (Blackwell) · Apple M5 Max (128 GB unified)
+SOURCE    :: private. results public.
+STATUS    :: OPEN TO ENGINEERING ROLES
+```
 
-I love this. Not the finish line: the getting good. Every bug is a lesson, every failed build is information, and every day there is something I could not do yesterday that I can do today.
+### `01 // PRODUCTION SYSTEMS` (private repositories)
 
-- **Always a student.** No ego about where an idea comes from. If someone built it better, I study it until I understand why.
-- **Never a day without code.** Small, every day, for years. The marathon is made of single steps.
-- **Projects, never tutorials.** I learn by building real things for real problems, then building them again better.
-- **Fail fast, in a branch.** Mistakes are free until production. Every failure becomes a test, and every repeated failure becomes automation so it cannot happen again.
-- **Calm and careful.** Understand before changing. Control what I can control, accept what I cannot, and write down the lesson.
+| SYSTEM | SCOPE | STACK |
+| :--- | :--- | :--- |
+| **Multi-Agent Engineering Harness** | Parallel AI coding agents (Claude Code, Codex, Gemini CLI), each on its own lane; every commit passes format, pedantic lint, tests and a privacy scan before it lands. | `Rust` · `Git` · `WezTerm` |
+| **Financial & OCR Reconciliation Engine** | Sales packets, receipt and statement OCR, reconciliation to the cent with zero floating-point drift. | `Rust` · `DataFusion` · `redb` · `OCR` |
+| **Field Operations & Property Platform** | Work orders, labor hours, receipts and expenses for rental properties on embedded transactional storage. | `Rust` · `redb` |
+| **Proven Money** | Lean 4 proofs of conservation, rounding bounds and no overflow for the money core. | `Lean 4` · `Rust` |
 
-## What I am building
+### `02 // DOCTRINE`
 
-All of it in Rust, all of it solving problems I actually have.
+```text
+Measure before claiming. Done means it ran and the output was checked.
+Every failure becomes a test. Every repeated failure becomes automation.
+Ship daily.
+```
 
-- **A field app for property operations** - work orders, labor-hour logs and tenant requests in one place, so the people doing the work and the person running it see the same truth. Rust core, iPhone app. *In progress.*
-- **A personal tax suite** - import documents, read them with OCR into typed records in integer cents, compute from the official instructions for the tax year, fill the official forms, keep every number traceable to the page it came from. Illinois first. *In progress.*
-- **Document and receipt processing** - scanned statements and receipts turned into clean, reconciled records.
-- **A team of AI coding agents run like an engineering org** - roles from intern to staff engineer, results reviewed by a different model family than the one that wrote them, and a nightly loop that learns from what passed and what had to be redone. A supervisor that keeps every agent working is *in progress*.
-- **A decision engine for picking tools by measurement** - multi-criteria ranking with uncertainty: nothing is called the best without the numbers to show it. *In progress.*
-
-## The dojo
-
-My daily practice. I take popular and trending open-source projects, read them until I understand how they work, write the study in my own words, then rebuild the core idea in Rust from my notes with tests first. Smallest first, one level up at a time: under 1k lines, then 10k, then 100k.
-
-First study: how GitHub-trending trackers work, from a 48-line script to a full notification service. My Rust rebuild adds retries, dedup and ranking history that the originals do not have. *In progress.*
-
-## How I work
-
-- Tests first; small, reviewable changes.
-- `cargo fmt`, Clippy pedantic and warnings-as-errors on my Rust.
-- Money is integer cents. Never a float.
-- Measure before claiming. "Done" means it ran and the output was checked.
-- Working code and an accepted result are different things; I track both.
-- Respect for other people's work: ideas and permissively licensed code with their notices kept, never anyone's protected expression.
-
-## Stack
-
-![Rust](https://img.shields.io/badge/Rust-131014?style=flat-square&logo=rust&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-131014?style=flat-square&logo=sqlite&logoColor=white)
-
-Rust first, and I am porting everything else I own into it. Older Python, TypeScript and Java code is being rewritten in Rust, each port proven by a parity test before the original retires.
-
-## Open to work
-
-Fully remote software, systems, automation and developer-tooling roles. Reach me here on GitHub.
+Architecture reviews and live code walkthroughs on request.
 
 ---
 
 <div align="center">
 
-> And whatsoever ye do, do it heartily, as to the Lord, and not unto men;
->
-> Colossians 3:23 · KJV
+**`Colossians 3:23` · `Psalm 144:1`**
 
-<sub>© 2026 Stefano Theofanous and Goroshi LLC</sub>
+`☦ ICXC NIKA ☦`
 
 </div>
