@@ -70,7 +70,7 @@ FLEET     :: CLI: Claude Code · Codex · Gemini CLI · GitHub Copilot · OpenCo
           :: IDE & apps: Cursor · Antigravity · Claude · ChatGPT · Gemini
           :: local: Ollama · Qwen3.8 27B · Flash-Next
 COMPUTE   :: Apple M5 Max · 18-core CPU · 40-core GPU · 128 GB unified · 8 TB SSD
-          :: GPUs: NVIDIA RTX 5080 (Blackwell) · RTX 4090 · RTX 4080 · RTX 3080
+          :: GPUs: NVIDIA RTX 5080 · RTX 5070 (Blackwell) · RTX 4090 · RTX 4080 (Ada) · RTX 3080
           :: 80+ TB storage & backup: local nodes + 30 TB Google cloud + iCloud
           :: private Tailscale mesh across every node
           :: expanding.
