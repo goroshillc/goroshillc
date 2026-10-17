@@ -19,9 +19,9 @@ ORG       :: Goroshi LLC · Founder & Systems Engineer
 EDITOR    :: Neovim. hands on home row.
 OS        :: Arch Linux (Omarchy, Hyprland) · macOS
 AIM       :: theosis.
-AGENTS    :: 5,300+ AI agent sessions run · 3,600+ orchestrated subagents
+AGENTS    :: 7,200+ AI agent sessions run · 5,400+ orchestrated subagents
           :: 210 sessions in a single day · 117 agents in one workflow
-TOKENS    :: 98B+ tokens processed across Claude and Codex (measured Oct 16 2026)
+TOKENS    :: 129B+ tokens processed across Claude, Codex, Copilot, Antigravity, OpenCode and local models (measured Oct 17 2026)
 FLEET     :: CLI: Claude Code · Codex · Gemini CLI · GitHub Copilot · OpenCode
           :: IDE & apps: Cursor · Antigravity · Claude · ChatGPT · Gemini
           :: local: Ollama · Qwen3.8 27B · Flash-Next
@@ -30,8 +30,8 @@ COMPUTE   :: Apple M5 Max · 18-core CPU · 40-core GPU · 128 GB unified · 8 T
           :: 80+ TB storage & backup, local + cloud
           :: private Tailscale mesh across every node
           :: expanding.
-SCALE     :: 459 Rust crates in one workspace · 219 repositories
-OUTPUT    :: 2,293 contributions in the last year across 211 repositories
+SCALE     :: 460 Rust crates in one workspace · 243 repositories
+OUTPUT    :: 2,372 contributions in the last year across 235 repositories
 SOURCE    :: private. architecture reviews and live walkthroughs on request.
 STATUS    :: ACTIVE PRODUCTION // OPEN TO SENIOR ENGINEERING ROLES & PLATFORM ENGAGEMENTS
 ```
