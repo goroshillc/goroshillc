@@ -62,7 +62,7 @@ ORG       :: Goroshi LLC, founder
 EDGE      :: one engineer, 29 AI agent seats, every commit gated
 FLEET     :: Claude Code · Codex · Gemini CLI · Cursor · Copilot · Antigravity · OpenCode · local Qwen3.8 27B
 COMPUTE   :: MacBook Pro M5 Max (18 cores, 128 GB unified)
-          :: Athos: NVIDIA RTX 5080 (Blackwell, 16 GB)
+          :: NVIDIA RTX 5080 (Blackwell, 16 GB)
           :: storage node: 32 TB
           :: private Tailscale mesh between all nodes
 SCALE     :: one Rust workspace, 459 crates (cargo, Oct 16 2026)
