@@ -59,48 +59,53 @@
 
 ```text
 ID        :: goroshillc // JOHN 1:17 ✠ Α☧Ω
-ORG       :: Goroshi LLC, founder
+ORG       :: Goroshi LLC · Founder & Systems Engineer
 EDITOR    :: Neovim. hands on home row.
 OS        :: Arch Linux (Omarchy, Hyprland) · macOS
 AIM       :: theosis.
 AGENTS    :: 5,300+ AI agent sessions run · 3,600+ orchestrated subagents
           :: 210 sessions in a single day · 117 agents in one workflow
-          :: every commit gated
 FLEET     :: CLI: Claude Code · Codex · Gemini CLI · Copilot · OpenCode
           :: IDE & apps: Cursor · Antigravity · Claude · ChatGPT · Gemini
           :: local: Ollama · Qwen3.8 27B · Flash-Next
-COMPUTE   :: MacBook Pro M5 Max (18 cores, 128 GB unified)
+COMPUTE   :: Apple M5 Max · 18-core CPU · 40-core GPU · 128 GB unified · 8 TB SSD
           :: NVIDIA RTX 5080 (Blackwell, 16 GB)
-          :: storage node: 32 TB
-          :: private Tailscale mesh between all nodes
-SCALE     :: 459 Rust crates in one workspace
+          :: 32 TB storage and backup node
+          :: private Tailscale mesh across every node
+SCALE     :: 459 Rust crates in one workspace · 219 repositories
 OUTPUT    :: 2,275 contributions in the last year across 211 repositories
-SOURCE    :: private. results public.
-STATUS    :: OPEN TO ENGINEERING ROLES
+SOURCE    :: private. architecture reviews and live walkthroughs on request.
+STATUS    :: ACTIVE PRODUCTION // OPEN TO SENIOR ENGINEERING ROLES & PLATFORM ENGAGEMENTS
 ```
 
 ### `01 // PRODUCTION SYSTEMS` (private repositories)
 
-| SYSTEM | SCOPE | STACK |
+| SYSTEM | ARCHITECTURE & SCOPE | STACK |
 | :--- | :--- | :--- |
-| **Multi-Agent Engineering Harness** | Parallel AI coding agents (Claude Code, Codex, Gemini CLI), each on its own lane; every commit passes format, pedantic lint, tests and a privacy scan before it lands. | `Rust` · `Git` · `WezTerm` |
-| **Financial & OCR Reconciliation Engine** | Sales packets, receipt and statement OCR, reconciliation to the cent with zero floating-point drift. | `Rust` · `DataFusion` · `redb` · `OCR` |
-| **Field Operations & Property Platform** | Work orders, labor hours, receipts and expenses for rental properties on embedded transactional storage. | `Rust` · `redb` |
-| **Proven Money** | Lean 4 proofs of conservation, rounding bounds and no overflow for the money core. | `Lean 4` · `Rust` |
+| **Multi-Agent Engineering Harness** | Parallel AI coding agents on isolated lanes across WezTerm. Cross-family review: the model family that writes a change does not approve it. Every commit passes `cargo fmt`, `clippy::pedantic -D warnings`, the test suite and a secret and personal-data scan before it lands. | `Rust` · `Git` · `WezTerm` |
+| **Financial & OCR Reconciliation Engine** | Monthly sales packets, statement and receipt OCR, reconciled to the exact cent in `i64` with zero floating-point drift; every number traces back to its source page. | `Rust` · `DataFusion` · `redb` · `OCR` |
+| **Proven Money** | `Lean 4` specification of the currency core: cents conserved across N-way splits, half-up rounding bounds, no `i64` overflow. Machine-checked proofs underway; target year-end 2026. | `Lean 4` · `Rust` |
+| **Field Operations & Property Platform** | Rental property operations: work orders, labor-hour ledgers, receipts and expenses on embedded ACID transactional storage. | `Rust` · `redb` |
 
 ### `02 // DOCTRINE`
 
 ```text
-Measure before claiming. Done means it ran and the output was checked.
-Every failure becomes a test. Every repeated failure becomes automation.
-Ship daily.
+01. MEASURE BEFORE CLAIMING   :: working code and a verified result are different states.
+                                 done means it ran and was checked against ground truth.
+02. ADVERSARIAL VERIFICATION  :: the model family that writes a change never approves it.
+                                 compiler, lint and privacy gates fail closed.
+03. ZERO-FLOAT LEDGERS        :: money is i64 integer cents, being proven in Lean 4.
+                                 floating point is forbidden on financial paths.
+04. SCAR-DRIVEN AUTOMATION    :: every bug becomes a regression test.
+                                 every repeated failure becomes a permanent gate.
+05. SHIP DAILY                :: small verified increments, every day, no unverified merges.
 ```
-
-Architecture reviews and live code walkthroughs on request.
 
 ---
 
 <div align="center">
+
+**[goroshillc.com](https://goroshillc.com/) · [LinkedIn](https://www.linkedin.com/in/stefano-theofanous) · contact@goroshillc.com**
 
 **`Colossians 3:23` · `Psalm 144:1`**
 
