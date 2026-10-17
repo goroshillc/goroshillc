@@ -2,7 +2,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
-    <img src="assets/banner-light.svg" width="100%" alt="Stefano Theofanous, Goroshi LLC">
+    <img src="assets/banner-light.svg" width="100%" alt="Stefano Theofanous, Goroshi LLC, platform and systems engineering">
   </picture>
 </p>
 
@@ -40,19 +40,33 @@
 ![Pandas](https://img.shields.io/badge/Pandas-000000?style=for-the-badge&logo=pandas&logoColor=white)
 ![CUDA](https://img.shields.io/badge/CUDA-000000?style=for-the-badge&logo=nvidia&logoColor=76B900)
 ![Metal](https://img.shields.io/badge/Metal-000000?style=for-the-badge&logo=apple&logoColor=white)
+
+**AI Fleet**
+
 ![Claude Code](https://img.shields.io/badge/Claude_Code-000000?style=for-the-badge&logo=anthropic&logoColor=white)
+![Codex](https://img.shields.io/badge/OpenAI_Codex-000000?style=for-the-badge&logo=openai&logoColor=white)
+![Gemini](https://img.shields.io/badge/Gemini_CLI-000000?style=for-the-badge&logo=googlegemini&logoColor=8E75B2)
+![Cursor](https://img.shields.io/badge/Cursor-000000?style=for-the-badge&logo=cursor&logoColor=white)
+![Copilot](https://img.shields.io/badge/GitHub_Copilot-000000?style=for-the-badge&logo=githubcopilot&logoColor=white)
+![Antigravity](https://img.shields.io/badge/Antigravity-000000?style=for-the-badge&logo=google&logoColor=white)
+![OpenCode](https://img.shields.io/badge/OpenCode-000000?style=for-the-badge)
+![Ollama](https://img.shields.io/badge/Ollama_·_Qwen3.8_27B-000000?style=for-the-badge&logo=ollama&logoColor=white)
 
 </div>
 
 ---
 
 ```text
-ID        :: goroshillc
+ID        :: goroshillc // JOHN 1:17 ✠ Α☧Ω
 ORG       :: Goroshi LLC, founder
-EDGE      :: one engineer + a fleet of AI coding agents, every commit gated
+EDGE      :: one engineer, 29 AI agent seats, every commit gated
+FLEET     :: Claude Code · Codex · Gemini CLI · Cursor · Copilot · Antigravity · OpenCode · local Qwen3.8 27B
+COMPUTE   :: MacBook Pro M5 Max (18 cores, 128 GB unified)
+          :: Athos: NVIDIA RTX 5080 (Blackwell, 16 GB)
+          :: storage node: 32 TB
+          :: private Tailscale mesh between all nodes
 SCALE     :: one Rust workspace, 459 crates (cargo, Oct 16 2026)
 MONEY     :: i64 integer cents. never a float.
-COMPUTE   :: NVIDIA RTX 5080 (Blackwell) · Apple M5 Max (128 GB unified)
 SOURCE    :: private. results public.
 STATUS    :: OPEN TO ENGINEERING ROLES
 ```
@@ -82,6 +96,6 @@ Architecture reviews and live code walkthroughs on request.
 
 **`Colossians 3:23` · `Psalm 144:1`**
 
-`☦ ICXC NIKA ☦`
+`☦︎ ICXC NIKA ☦︎`
 
 </div>
