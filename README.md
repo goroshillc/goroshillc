@@ -8,8 +8,8 @@
 
 <div align="center">
 
-### `PLATFORM & SYSTEMS ENGINEER // GOROSHI LLC`
-**`AI-NATIVE` · `FULL STACK, METAL TO BROWSER` · `SHIPS DAILY`**
+### `SENIOR ENGINEER // PLATFORM & SYSTEMS // GOROSHI LLC`
+**`AI-NATIVE` · `NEOVIM` · `ARCH LINUX` · `METAL TO BROWSER` · `SHIPS DAILY`**
 
 **Languages**
 
@@ -50,7 +50,8 @@
 ![Copilot](https://img.shields.io/badge/GitHub_Copilot-000000?style=for-the-badge&logo=githubcopilot&logoColor=white)
 ![Antigravity](https://img.shields.io/badge/Antigravity-000000?style=for-the-badge&logo=google&logoColor=white)
 ![OpenCode](https://img.shields.io/badge/OpenCode-000000?style=for-the-badge)
-![Ollama](https://img.shields.io/badge/Ollama_·_Qwen3.8_27B-000000?style=for-the-badge&logo=ollama&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama_·_Qwen3.8_27B_·_Flash--Next-000000?style=for-the-badge&logo=ollama&logoColor=white)
+![ChatGPT](https://img.shields.io/badge/ChatGPT-000000?style=for-the-badge&logo=openai&logoColor=white)
 
 </div>
 
@@ -59,14 +60,21 @@
 ```text
 ID        :: goroshillc // JOHN 1:17 ✠ Α☧Ω
 ORG       :: Goroshi LLC, founder
-EDGE      :: one engineer, 29 AI agent seats, every commit gated
-FLEET     :: Claude Code · Codex · Gemini CLI · Cursor · Copilot · Antigravity · OpenCode · local Qwen3.8 27B
+EDITOR    :: Neovim. hands on home row.
+OS        :: Arch Linux (Omarchy, Hyprland) · macOS
+AIM       :: theosis.
+AGENTS    :: 5,300+ AI agent sessions run · 3,600+ orchestrated subagents
+          :: 210 sessions in a single day · 117 agents in one workflow
+          :: every commit gated
+FLEET     :: CLI: Claude Code · Codex · Gemini CLI · Copilot · OpenCode
+          :: IDE & apps: Cursor · Antigravity · Claude · ChatGPT · Gemini
+          :: local: Ollama · Qwen3.8 27B · Flash-Next
 COMPUTE   :: MacBook Pro M5 Max (18 cores, 128 GB unified)
           :: NVIDIA RTX 5080 (Blackwell, 16 GB)
           :: storage node: 32 TB
           :: private Tailscale mesh between all nodes
-SCALE     :: one Rust workspace, 459 crates (cargo, Oct 16 2026)
-MONEY     :: i64 integer cents. never a float.
+SCALE     :: 459 Rust crates in one workspace
+OUTPUT    :: 2,275 contributions in the last year across 211 repositories
 SOURCE    :: private. results public.
 STATUS    :: OPEN TO ENGINEERING ROLES
 ```
