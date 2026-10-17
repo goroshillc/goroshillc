@@ -1,20 +1,20 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.png">
-    <img src="assets/banner-light.png" width="100%" alt="Stefano Theofanous, Goroshi LLC, platform and systems engineering">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.webp">
+    <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.webp">
+    <img src="assets/banner-light.png" width="100%" alt="GOROSHI. Stefano Theofanous, platform and systems engineer, AI-native.">
   </picture>
 </p>
 
 <div align="center">
 
-### `SENIOR ENGINEER // PLATFORM & SYSTEMS // GOROSHI LLC`
+### `PLATFORM & SYSTEMS ENGINEER // GOROSHI LLC`
 **`AI-NATIVE` · `NEOVIM` · `ARCH LINUX` · `METAL TO BROWSER` · `SHIPS DAILY`**
 
 </div>
 
 ```text
-ID        :: goroshillc // JOHN 1:17 ✠ Α☧Ω
+ID        :: goroshillc
 ORG       :: Goroshi LLC · Founder & Systems Engineer
 EDITOR    :: Neovim. hands on home row.
 OS        :: Arch Linux (Omarchy, Hyprland) · macOS
@@ -33,7 +33,7 @@ COMPUTE   :: Apple M5 Max · 18-core CPU · 40-core GPU · 128 GB unified · 8 T
 SCALE     :: 460 Rust crates in one workspace · 243 repositories
 OUTPUT    :: 2,372 contributions in the last year across 235 repositories
 SOURCE    :: private. architecture reviews and live walkthroughs on request.
-STATUS    :: ACTIVE PRODUCTION // OPEN TO SENIOR ENGINEERING ROLES & PLATFORM ENGAGEMENTS
+STATUS    :: ACTIVE PRODUCTION // OPEN TO ENGINEERING ROLES & PLATFORM ENGAGEMENTS
 ```
 
 ### `01 // STACK`
@@ -114,8 +114,6 @@ STATUS    :: ACTIVE PRODUCTION // OPEN TO SENIOR ENGINEERING ROLES & PLATFORM EN
 
 **[goroshillc.com](https://goroshillc.com/) · [LinkedIn](https://www.linkedin.com/in/stefano-theofanous) · contact@goroshillc.com**
 
-**`Colossians 3:23` · `Psalm 144:1`**
-
-`☦︎ ICXC NIKA ☦︎`
+<sub>Colossians 3:23 · ☦︎ ICXC NIKA</sub>
 
 </div>
