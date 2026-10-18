@@ -114,6 +114,6 @@ STATUS    :: ACTIVE PRODUCTION // OPEN TO ENGINEERING ROLES & PLATFORM ENGAGEMEN
 
 **[goroshillc.com](https://goroshillc.com/) · [LinkedIn](https://www.linkedin.com/in/stefano-theofanous) · contact@goroshillc.com**
 
-<sub>Colossians 3:23 · ☦︎ ICXC NIKA</sub>
+<sub>Colossians 3:23 · Α ☧ Ω · ICXC NIKA</sub>
 
 </div>
