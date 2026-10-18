@@ -93,7 +93,7 @@ STATUS    :: ACTIVE PRODUCTION // OPEN TO ENGINEERING ROLES & PLATFORM ENGAGEMEN
 | :--- | :--- | :--- |
 | **Multi-Agent Engineering Harness** | Parallel AI coding agents on isolated lanes across WezTerm. Cross-family review: the model family that writes a change does not approve it. Every commit passes `cargo fmt`, `clippy::pedantic -D warnings`, the test suite and a secret and personal-data scan before it lands. | `Rust` · `Git` · `WezTerm` |
 | **Financial & OCR Reconciliation Engine** | Monthly sales packets, statement and receipt OCR, reconciled to the exact cent in `i64` with zero floating-point drift; every number traces back to its source page. | `Rust` · `DataFusion` · `redb` · `OCR` |
-| **Bare-Metal Performance Lab** | Roofline measurement of every machine: streaming bandwidth, FMA throughput and the ridge point, used to pick quantization (q4/q8/fp16) and kernel fusion for local model inference. | `Rust` · `Metal` · `CUDA` |
+| **Bare-Metal Performance Lab** | Roofline measurement on our own hardware: streaming bandwidth, FMA throughput and the ridge point, used to pick quantization (q4/q8/fp16) and kernel fusion for local model inference. | `Rust` · `Metal` |
 | **Proven Money** | `Lean 4` specification of the currency core: cents conserved across N-way splits, half-up rounding bounds, no `i64` overflow. Machine-checked proofs underway; target year-end 2026. | `Lean 4` · `Rust` |
 | **Field Operations & Property Platform** | Rental property operations: work orders, labor-hour ledgers, receipts and expenses on embedded ACID transactional storage. | `Rust` · `redb` |
 
