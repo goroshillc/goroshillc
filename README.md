@@ -25,6 +25,8 @@ TOKENS    :: 130B+ tokens processed across Claude, Codex, Copilot, Antigravity, 
 FLEET     :: CLI: Claude Code · Codex · Gemini CLI · GitHub Copilot · OpenCode
           :: IDE & apps: Cursor · Antigravity · Claude · ChatGPT · Gemini
           :: local: Ollama · Qwen3.8 27B · Flash-Next
+METAL     :: hand-written GPU compute kernels in Rust on Apple Metal
+          :: measured: 294 GB/s memory bandwidth · 2.8 TFLOP/s FP32 · ridge 9.6 FLOP/byte
 COMPUTE   :: Apple M5 Max · 18-core CPU · 40-core GPU · 128 GB unified · 8 TB SSD
           :: GPUs: NVIDIA RTX 5080 · RTX 5070 (Blackwell) · RTX 4090 · RTX 4080 (Ada) · RTX 3080
           :: 80+ TB storage & backup, local + cloud
@@ -91,6 +93,7 @@ STATUS    :: ACTIVE PRODUCTION // OPEN TO ENGINEERING ROLES & PLATFORM ENGAGEMEN
 | :--- | :--- | :--- |
 | **Multi-Agent Engineering Harness** | Parallel AI coding agents on isolated lanes across WezTerm. Cross-family review: the model family that writes a change does not approve it. Every commit passes `cargo fmt`, `clippy::pedantic -D warnings`, the test suite and a secret and personal-data scan before it lands. | `Rust` · `Git` · `WezTerm` |
 | **Financial & OCR Reconciliation Engine** | Monthly sales packets, statement and receipt OCR, reconciled to the exact cent in `i64` with zero floating-point drift; every number traces back to its source page. | `Rust` · `DataFusion` · `redb` · `OCR` |
+| **Bare-Metal Performance Lab** | Roofline measurement of every machine: streaming bandwidth, FMA throughput and the ridge point, used to pick quantization (q4/q8/fp16) and kernel fusion for local model inference. | `Rust` · `Metal` · `CUDA` |
 | **Proven Money** | `Lean 4` specification of the currency core: cents conserved across N-way splits, half-up rounding bounds, no `i64` overflow. Machine-checked proofs underway; target year-end 2026. | `Lean 4` · `Rust` |
 | **Field Operations & Property Platform** | Rental property operations: work orders, labor-hour ledgers, receipts and expenses on embedded ACID transactional storage. | `Rust` · `redb` |
 
