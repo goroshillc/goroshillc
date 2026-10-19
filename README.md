@@ -27,13 +27,13 @@ FLEET     :: CLI: Claude Code · Codex · Gemini CLI · GitHub Copilot · OpenCo
           :: local: Ollama · Qwen3.8 27B · Flash-Next
 METAL     :: hand-written GPU compute kernels in Rust on Apple Metal
           :: measured: 294 GB/s memory bandwidth · 2.8 TFLOP/s FP32 · ridge 9.6 FLOP/byte
-COMPUTE   :: Apple M5 Max · 18-core CPU · 40-core GPU · 128 GB unified · 8 TB SSD
-          :: GPUs: NVIDIA RTX 5080 · RTX 5070 (Blackwell) · RTX 4090 · RTX 4080 (Ada) · RTX 3080
+COMPUTE   :: Apple M5 Max · 18-core CPU · 40-core GPU · 128 GB unified · 8 TB SSD · +
+          :: GPUs: NVIDIA RTX 5080 · RTX 5070 (Blackwell) · RTX 4090 · RTX 4080 (Ada) · RTX 3080 · +
           :: 80+ TB storage & backup, local + cloud
-          :: private Tailscale mesh across every node
+          :: private Tailscale mesh across every node · +
           :: expanding.
-SCALE     :: 461 Rust crates in one workspace · 258 repositories
-OUTPUT    :: 2,458 contributions in the last year across 236 repositories
+SCALE     :: 461+ Rust crates in one workspace · 258+ repositories
+OUTPUT    :: 2,458+ contributions in the last year across 236+ repositories
 SOURCE    :: private. architecture reviews and live walkthroughs on request.
 STATUS    :: ACTIVE PRODUCTION // OPEN TO ENGINEERING ROLES & PLATFORM ENGAGEMENTS
 ```
