@@ -32,8 +32,8 @@ COMPUTE   :: Apple M5 Max · 18-core CPU · 40-core GPU · 128 GB unified · 8 T
           :: 80+ TB storage & backup, local + cloud
           :: private Tailscale mesh across every node
           :: expanding.
-SCALE     :: 460 Rust crates in one workspace · 257 repositories
-OUTPUT    :: 2,453 contributions in the last year across 249 repositories
+SCALE     :: 461 Rust crates in one workspace · 258 repositories
+OUTPUT    :: 2,457 contributions in the last year across 250 repositories
 SOURCE    :: private. architecture reviews and live walkthroughs on request.
 STATUS    :: ACTIVE PRODUCTION // OPEN TO ENGINEERING ROLES & PLATFORM ENGAGEMENTS
 ```
