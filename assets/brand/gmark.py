@@ -1,46 +1,60 @@
-"""The Goroshi G monogram, shared by the logo and the banner (Stefano 2026-10-27: "replace it with
-the goroshi g please the logo we have")."""
-from fontTools.pens.boundsPen import BoundsPen
-from typeset import _font, path_d, shape
+"""The Goroshi G and the brand palette (Stefano Theofanous, 2026-10-27).
+
+His direction: "just a g with the clean background midnight blue and solo leveling purple tone";
+"the circle around it seems so weird"; "fuck pink"; no thin lines ("the way urs is done is strange
+thats not even how it is on the garcias"); "i dont want this looking ai slop genned".
+So: no ring, no disc, no swirl, no magenta. Midnight blue with Shadow-Monarch violet, white G.
+"""
+from gconstruct import g_outline
 
 CINZEL = None  # set by the caller
 
+# Midnight blue + Solo Leveling purple. Nothing pink, nothing magenta.
+INK = "#F4F5FF"        # near-white with a cool cast
+COOL = "#AEB8FF"       # periwinkle highlight (blue side of violet)
+VIOLET = "#5B45F0"     # Shadow Monarch violet
+ROYAL = "#2A2F9E"      # royal blue
+MIDNIGHT = "#0B1033"   # midnight blue
+BLACK = "#05060F"      # blue-black
+
 
 def ink_box(font, ch, size):
-    f, gs, order, upm = _font(font)
-    bp = BoundsPen(gs)
-    gs[order[shape(font, ch)[0]["g"]]].draw(bp)
-    x0, y0, x1, y1 = bp.bounds
-    s = size / upm
-    return x0 * s, y0 * s, x1 * s, y1 * s
+    """Extent of the constructed G of diameter `size`, centered on its origin (API kept for callers)."""
+    r = size / 2
+    return -r, -r, r, r
 
 
-def monogram(cx, cy, R, field=True, ink="#f5f4ff", ring="url(#ring)", uid="m"):
-    size = R * 0.98
+def g_path(cx, cy, size):
+    """The constructed Goroshi G (gconstruct.py), diameter `size`, centered on (cx, cy)."""
+    r = size / 2
+    return g_outline(cx, cy, r, r * 0.30)
+
+
+def glow(cx, cy, r, uid, strength=1.0):
+    """A soft violet-to-royal light behind the G (no hard edge, no shape)."""
+    return (f'<radialGradient id="{uid}glow" cx="{cx}" cy="{cy}" r="{r}" gradientUnits="userSpaceOnUse">'
+            f'<stop offset="0" stop-color="{VIOLET}" stop-opacity="{.55 * strength:.2f}"/>'
+            f'<stop offset=".55" stop-color="{ROYAL}" stop-opacity="{.25 * strength:.2f}"/>'
+            f'<stop offset="1" stop-color="{ROYAL}" stop-opacity="0"/></radialGradient>',
+            f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="url(#{uid}glow)"/>')
+
+
+def g_fill(uid, y0, y1):
+    """White at the top to periwinkle at the foot: a cool, crisp G."""
+    return (f'<linearGradient id="{uid}gf" gradientUnits="userSpaceOnUse" x1="0" y1="{y0:.0f}" x2="0" y2="{y1:.0f}">'
+            f'<stop offset="0" stop-color="{INK}"/><stop offset="1" stop-color="{COOL}"/></linearGradient>')
+
+
+def avatar(S=1024):
+    """Square, full-bleed: midnight field, violet light, the G. Works under any circular crop."""
+    size = S * 0.56
+    cx = cy = S / 2
     x0, y0, x1, y1 = ink_box(CINZEL, "G", size)
-    gx = cx - (x0 + x1) / 2            # center the G's ink, not its advance box
-    base = cy + (y0 + y1) / 2          # optical vertical center of the ink
-    g = path_d(CINZEL, "G", size, gx, base)
-    sw = R * 0.026
-    swirl = (f"M{cx - R * 1.2:.1f} {cy + R * .78:.1f} C {cx - R * .7:.1f} {cy + R * .38:.1f}, "
-             f"{cx - R * .35:.1f} {cy + R * .98:.1f}, {cx + R * .12:.1f} {cy + R * .66:.1f} "
-             f"S {cx + R * .78:.1f} {cy + R * .02:.1f}, {cx + R * 1.25:.1f} {cy + R * .12:.1f}")
-    defs = (f'<radialGradient id="{uid}bg" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#2d2a86"/>'
-            f'<stop offset=".7" stop-color="#1c1d5e"/><stop offset="1" stop-color="#14154a"/></radialGradient>'
-            f'<linearGradient id="ring" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/>'
-            f'<stop offset=".55" stop-color="#cbb8ff"/><stop offset="1" stop-color="#BC43D3"/></linearGradient>'
-            f'<clipPath id="{uid}c"><circle cx="{cx}" cy="{cy}" r="{R}"/></clipPath>'
-            f'<filter id="{uid}b" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="{R * .22:.1f}"/></filter>')
-    body = ""
-    if field:
-        body += (f'<g clip-path="url(#{uid}c)"><circle cx="{cx}" cy="{cy}" r="{R}" fill="url(#{uid}bg)"/>'
-                 f'<g filter="url(#{uid}b)"><ellipse cx="{cx + R * .45:.1f}" cy="{cy - R * .5:.1f}" rx="{R * .7:.1f}" ry="{R * .4:.1f}" fill="#46439F" opacity=".7"/>'
-                 f'<ellipse cx="{cx - R * .5:.1f}" cy="{cy + R * .65:.1f}" rx="{R * .75:.1f}" ry="{R * .35:.1f}" fill="#BC43D3" opacity=".35"/></g>'
-                 '</g>')
-    if field:
-        body += f'<circle cx="{cx}" cy="{cy}" r="{R - .75:.2f}" fill="none" stroke="#3a3894" stroke-width="1.5"/>'
-    body += (f'<circle cx="{cx}" cy="{cy}" r="{R * .86:.1f}" fill="none" stroke="{ring}" stroke-width="{sw:.2f}"/>'
-             f'<path fill="{ink}" d="{g}"/>')
-    return defs, body
-
-
+    gdef, gcircle = glow(cx, cy, S * 0.46, "av")
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{S}" height="{S}" viewBox="0 0 {S} {S}" role="img" aria-label="Goroshi LLC">'
+            f'<title>Goroshi LLC</title><defs>'
+            f'<radialGradient id="avbg" cx="50%" cy="45%" r="75%"><stop offset="0" stop-color="#151B55"/>'
+            f'<stop offset=".6" stop-color="{MIDNIGHT}"/><stop offset="1" stop-color="{BLACK}"/></radialGradient>'
+            f'{gdef}{g_fill("av", cy - (y1 - y0) / 2, cy + (y1 - y0) / 2)}</defs>'
+            f'<rect width="{S}" height="{S}" fill="url(#avbg)"/>{gcircle}'
+            f'<path fill="url(#avgf)" d="{g_path(cx, cy, size)}"/></svg>\n')

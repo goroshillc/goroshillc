@@ -8,33 +8,36 @@ import gmark
 from typeset import path_d
 
 A, OUT = sys.argv[1:3]
-INTER = {w: f"{A}/Inter-{w}.ttf" for w in (400, 500, 600)}
-CINZEL = f"{A}/Cinzel-600.ttf"
+INTER = {w: f"{A}/Geist-{w}.ttf" for w in (400, 500, 600)}  # Geist (SIL OFL 1.1)
+CINZEL = f"{A}/Geist-600.ttf"  # display face: Geist 600 (Cinzel retired 2026-10-27)
 gmark.CINZEL = CINZEL
 W, H, X = 1584, 396, 560
-defs, body = gmark.monogram(1400, 198, 104, uid="li")
-word = path_d(CINZEL, "GOROSHI LLC", 64, X - 2, 178, tracking=10)
+gx0, gy0, gx1, gy1 = gmark.ink_box(CINZEL, "G", 150)
+defs = (f'<linearGradient id="gli" gradientUnits="userSpaceOnUse" x1="0" y1="{198 - (gy1 - gy0) / 2:.0f}" x2="0" y2="{198 + (gy1 - gy0) / 2:.0f}">'
+        f'<stop offset="0" stop-color="#F4F5FF"/><stop offset="1" stop-color="#AEB8FF"/></linearGradient>'
+        f'<radialGradient id="ali" cx="1400" cy="198" r="210" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#5B45F0" stop-opacity=".55"/>'
+        f'<stop offset=".55" stop-color="#2A2F9E" stop-opacity=".22"/><stop offset="1" stop-color="#2A2F9E" stop-opacity="0"/></radialGradient>')
+body = f'<circle cx="1400" cy="198" r="210" fill="url(#ali)"/><path fill="url(#gli)" d="{gmark.g_path(1400, 198, 150)}"/>'
+word = path_d(CINZEL, "GOROSHI", 66, X - 2, 178, tracking=8)
 tag = path_d(INTER[500], "Platform & Systems Engineering", 30, X, 228)
 fx = path_d(INTER[400], "Rust · AI agent infrastructure · Financial systems · GPU compute", 19, X, 270)
 svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Goroshi LLC. Platform and Systems Engineering.">
 <defs>{defs}
-<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#07070d"/><stop offset=".55" stop-color="#0c0d2b"/><stop offset="1" stop-color="#14123f"/></linearGradient>
-<linearGradient id="rule" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d7b8ff"/><stop offset="1" stop-color="#BC43D3"/></linearGradient>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#05060F"/><stop offset=".55" stop-color="#0B1033"/><stop offset="1" stop-color="#121A52"/></linearGradient>
+<linearGradient id="rule" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#AEB8FF"/><stop offset="1" stop-color="#5B45F0"/></linearGradient>
 <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="70"/></filter>
 </defs>
 <rect width="{W}" height="{H}" fill="url(#bg)"/>
 <g filter="url(#blur)">
-<ellipse cx="1180" cy="120" rx="320" ry="130" fill="#181A56" opacity=".95"/>
-<ellipse cx="1380" cy="300" rx="260" ry="150" fill="#46439F" opacity=".7"/>
-<ellipse cx="860" cy="330" rx="260" ry="100" fill="#8877B6" opacity=".4"/>
-<ellipse cx="1540" cy="60" rx="140" ry="80" fill="#BC43D3" opacity=".3"/>
+<ellipse cx="1180" cy="120" rx="320" ry="130" fill="#10164A" opacity=".95"/>
+<ellipse cx="1380" cy="300" rx="260" ry="150" fill="#2A2F9E" opacity=".75"/>
+<ellipse cx="860" cy="330" rx="260" ry="100" fill="#3F3BC8" opacity=".45"/>
+<ellipse cx="1540" cy="60" rx="140" ry="80" fill="#5B45F0" opacity=".4"/>
 </g>
-<path d="M-20 372 C 260 320, 520 396, 820 356 S 1180 328, 1250 350" fill="none" stroke="#ffffff" stroke-opacity=".45" stroke-width="1.4"/>
-<path d="M-20 34 C 240 80, 520 14, 820 48 S 1180 70, 1250 44" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="1.1"/>
 <rect x="{X - 30}" y="118" width="4" height="164" rx="2" fill="url(#rule)"/>
-<path fill="#f5f4ff" d="{word}"/>
-<path fill="#f5f4ff" d="{tag}"/>
-<path fill="#d9d6ff" d="{fx}"/>
+<path fill="#F4F5FF" d="{word}"/>
+<path fill="#F4F5FF" d="{tag}"/>
+<path fill="#D3D8FF" d="{fx}"/>
 {body}
 </svg>
 '''

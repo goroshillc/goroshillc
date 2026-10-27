@@ -8,10 +8,10 @@ import sys
 from typeset import cap_height, path_d, width
 
 A, README, OUT = sys.argv[1:4]
-INTER = {w: f"{A}/Inter-{w}.ttf" for w in (400, 500, 600)}
+INTER = {w: f"{A}/Geist-{w}.ttf" for w in (400, 500, 600)}  # Geist (SIL OFL 1.1)
 PAL = {
-    "dark": dict(ink="#f5f4ff", sub="#d9d6ff", head="#cbb8ff", card="#13143a", edge="#2b2a66", dot="#BC43D3"),
-    "light": dict(ink="#11123a", sub="#2a2870", head="#46439F", card="#ffffff", edge="#d9d4ff", dot="#6b3fd1"),
+    "dark": dict(ink="#F4F5FF", sub="#D3D8FF", head="#AEB8FF", card="#0E1440", edge="#26307A", dot="#5B45F0"),
+    "light": dict(ink="#0E1240", sub="#232A80", head="#3B33C4", card="#FFFFFF", edge="#D2D7FF", dot="#4B3FD8"),
 }
 W = 880
 
