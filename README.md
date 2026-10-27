@@ -1,5 +1,9 @@
 <p align="center">
-  <img src="assets/banner-dark.webp" width="100%" alt="Stefano Theofanous, Platform and Systems Engineer, Goroshi LLC.">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
+    <img src="assets/banner-dark.svg" width="100%" alt="Stefano Theofanous, Platform and Systems Engineer, Goroshi LLC.">
+  </picture>
 </p>
 
 I build production systems in Rust: multi-agent engineering platforms, financial reconciliation that is exact to the cent, and GPU compute on hardware I own. Founder of **Goroshi LLC**.
