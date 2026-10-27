@@ -75,7 +75,7 @@ def banner(mode):
 </g>
 <path class="ln" d="M520 372 C 680 322, 820 398, 960 352 S 1170 318, 1300 338" fill="none" stroke="{p["line"]}" stroke-width="1.4"/>
 <path class="ln ln2" d="M560 44 C 700 92, 840 30, 960 66 S 1150 96, 1290 50" fill="none" stroke="{p["line"]}" stroke-width="1.1"/>
-<circle class="aura" cx="1080" cy="206" r="140" fill="url(#au)"/>
+<circle class="aura" cx="1080" cy="206" r="150" fill="url(#au)"/>
 </g>
 <rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="20" fill="none" stroke="{p["edge"]}"/>
 <rect x="{X - 28}" y="118" width="4" height="176" rx="2" fill="url(#rule)"/>
@@ -89,16 +89,21 @@ def banner(mode):
 
 
 def chi_rho_banner(p):
-    """One crisp Chi Rho, sized and centered on the banner's text block (Stefano 2026-10-27:
-    "just have a simple Chi Rho crisp that actually fits in to the banner")."""
-    cap, sw, cx = 78, 6.5, 1080
+    """The Chi Rho inside the same fine gradient ring as the G logo, so banner and logo read as one
+    family (Stefano 2026-10-27: "make sure it actually fits"). Centered on the text block."""
+    cx, cy, R = 1080, 206, 74
+    ring_w = 2.6
+    cap, sw = 58, 4.2
     paths, top, bottom = M.chi_rho(cx, 0, cap, sw)
-    dy = 206 - (top + bottom) / 2          # center the whole monogram on the text block's middle
+    dy = cy - (top + bottom) / 2
     strokes = "".join(f'<path d="{d}"/>' for d in paths)
-    return (f'<g transform="translate(0 {dy:.2f})" fill="none" stroke="url(#crb)" stroke-width="{sw}" '
-            f'stroke-linecap="round" stroke-linejoin="round">{strokes}</g>'
-            f'<linearGradient id="crb" gradientUnits="userSpaceOnUse" x1="0" y1="{top + dy:.0f}" x2="0" y2="{bottom + dy:.0f}">'
-            f'<stop offset="0" stop-color="{p["ink"]}"/><stop offset="1" stop-color="{p["accent"]}"/></linearGradient>')
+    return (f'<linearGradient id="crb" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{p["ink"]}"/>'
+            f'<stop offset=".55" stop-color="{p["accent"]}"/><stop offset="1" stop-color="{"#BC43D3" if p["ink"] == "#f5f4ff" else "#46439F"}"/></linearGradient>'
+            f'<linearGradient id="crs" gradientUnits="userSpaceOnUse" x1="0" y1="{top + dy:.0f}" x2="0" y2="{bottom + dy:.0f}">'
+            f'<stop offset="0" stop-color="{p["ink"]}"/><stop offset="1" stop-color="{p["accent"]}"/></linearGradient>'
+            f'<circle cx="{cx}" cy="{cy}" r="{R}" fill="none" stroke="url(#crb)" stroke-width="{ring_w}"/>'
+            f'<g transform="translate(0 {dy:.2f})" fill="none" stroke="url(#crs)" stroke-width="{sw}" '
+            f'stroke-linecap="round" stroke-linejoin="round">{strokes}</g>')
 
 
 # Curated stack: what an employer or client scans for. Security posture and the reading list stay
