@@ -2,16 +2,19 @@
 <title>Stefano Theofanous · Founder and Rust Systems Engineer · Goroshi LLC</title>
 <defs>
 <style>
-.s1 { animation: d1 28s ease-in-out infinite alternate; transform-origin: 900px 160px; }
-.s2 { animation: d2 34s ease-in-out infinite alternate; transform-origin: 1100px 260px; }
-.s3 { animation: d3 40s ease-in-out infinite alternate; transform-origin: 700px 300px; }
-@keyframes d1 { to { transform: translate(-120px, 40px) rotate(18deg) scale(1.15); } }
-@keyframes d2 { to { transform: translate(80px, -50px) rotate(-14deg) scale(.9); } }
-@keyframes d3 { to { transform: translate(140px, -30px) rotate(10deg) scale(1.1); } }
+.s1 { animation: d1 22s ease-in-out infinite alternate; transform-origin: 900px 160px; }
+.s2 { animation: d2 26s ease-in-out infinite alternate; transform-origin: 1100px 260px; }
+.s3 { animation: d3 18s ease-in-out infinite alternate; transform-origin: 700px 300px; }
+.sweep { animation: sweep 16s ease-in-out infinite; }
+@keyframes sweep { 0% { transform: translateX(-700px); opacity: 0; } 30% { opacity: .55; } 70% { opacity: .55; } 100% { transform: translateX(1500px); opacity: 0; } }
+@keyframes d1 { to { transform: translate(-260px, 70px) rotate(22deg) scale(1.3); } }
+@keyframes d2 { to { transform: translate(160px, -90px) rotate(-18deg) scale(.8); } }
+@keyframes d3 { to { transform: translate(300px, -60px) rotate(14deg) scale(1.25); } }
 .aura { animation: breathe 7s ease-in-out infinite; transform-origin: 1080px 206px; }
-@keyframes breathe { 0%, 100% { opacity: .55; transform: scale(.94); } 50% { opacity: 1; transform: scale(1.06); } }
-@media (prefers-reduced-motion: reduce) { .s1, .s2, .s3, .aura { animation: none; } }
+@keyframes breathe { 0%, 100% { opacity: .45; transform: scale(.9); } 50% { opacity: 1; transform: scale(1.1); } }
+@media (prefers-reduced-motion: reduce) { .s1, .s2, .s3, .aura, .sweep { animation: none; } .sweep { opacity: 0; } }
 </style>
+<linearGradient id="sw" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#B9A8FF" stop-opacity="0"/><stop offset=".5" stop-color="#B9A8FF" stop-opacity="0.1"/><stop offset="1" stop-color="#B9A8FF" stop-opacity="0"/></linearGradient>
 <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#05060F"/><stop offset=".55" stop-color="#0D0B33"/><stop offset="1" stop-color="#1A1252"/></linearGradient>
 <radialGradient id="au"><stop offset="0" stop-color="#6A35FF" stop-opacity="0.55"/><stop offset=".55" stop-color="#3A1F9E" stop-opacity="0.22"/><stop offset="1" stop-color="#3A1F9E" stop-opacity="0"/></radialGradient>
 <linearGradient id="rule" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#B9A8FF"/><stop offset="1" stop-color="#6A35FF"/></linearGradient>
@@ -26,6 +29,7 @@
 <ellipse class="s3" cx="720" cy="320" rx="200" ry="90" fill="#4E2BC8" opacity="0.55"/>
 <ellipse class="s2" cx="1210" cy="90" rx="120" ry="70" fill="#6A35FF" opacity="0.4"/>
 </g>
+<rect class="sweep" x="0" y="0" width="420" height="400" fill="url(#sw)" transform="skewX(-18)"/>
 <circle class="aura" cx="1080" cy="206" r="150" fill="url(#au)"/>
 </g>
 <rect x="0.5" y="0.5" width="1279" height="399" rx="20" fill="none" stroke="#251E60"/>
