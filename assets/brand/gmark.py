@@ -25,8 +25,8 @@ def monogram(cx, cy, R, field=True, ink="#f5f4ff", ring="url(#ring)", uid="m"):
     swirl = (f"M{cx - R * 1.2:.1f} {cy + R * .78:.1f} C {cx - R * .7:.1f} {cy + R * .38:.1f}, "
              f"{cx - R * .35:.1f} {cy + R * .98:.1f}, {cx + R * .12:.1f} {cy + R * .66:.1f} "
              f"S {cx + R * .78:.1f} {cy + R * .02:.1f}, {cx + R * 1.25:.1f} {cy + R * .12:.1f}")
-    defs = (f'<radialGradient id="{uid}bg" cx="50%" cy="38%" r="70%"><stop offset="0" stop-color="#2a2580"/>'
-            f'<stop offset=".5" stop-color="#181A56"/><stop offset="1" stop-color="#07070d"/></radialGradient>'
+    defs = (f'<radialGradient id="{uid}bg" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#2d2a86"/>'
+            f'<stop offset=".7" stop-color="#1c1d5e"/><stop offset="1" stop-color="#14154a"/></radialGradient>'
             f'<linearGradient id="ring" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/>'
             f'<stop offset=".55" stop-color="#cbb8ff"/><stop offset="1" stop-color="#BC43D3"/></linearGradient>'
             f'<clipPath id="{uid}c"><circle cx="{cx}" cy="{cy}" r="{R}"/></clipPath>'
@@ -36,7 +36,9 @@ def monogram(cx, cy, R, field=True, ink="#f5f4ff", ring="url(#ring)", uid="m"):
         body += (f'<g clip-path="url(#{uid}c)"><circle cx="{cx}" cy="{cy}" r="{R}" fill="url(#{uid}bg)"/>'
                  f'<g filter="url(#{uid}b)"><ellipse cx="{cx + R * .45:.1f}" cy="{cy - R * .5:.1f}" rx="{R * .7:.1f}" ry="{R * .4:.1f}" fill="#46439F" opacity=".7"/>'
                  f'<ellipse cx="{cx - R * .5:.1f}" cy="{cy + R * .65:.1f}" rx="{R * .75:.1f}" ry="{R * .35:.1f}" fill="#BC43D3" opacity=".35"/></g>'
-                 f'<path d="{swirl}" fill="none" stroke="#ffffff" stroke-opacity=".5" stroke-width="{sw * .42:.2f}" stroke-linecap="round"/></g>')
+                 '</g>')
+    if field:
+        body += f'<circle cx="{cx}" cy="{cy}" r="{R - .75:.2f}" fill="none" stroke="#3a3894" stroke-width="1.5"/>'
     body += (f'<circle cx="{cx}" cy="{cy}" r="{R * .86:.1f}" fill="none" stroke="{ring}" stroke-width="{sw:.2f}"/>'
              f'<path fill="{ink}" d="{g}"/>')
     return defs, body

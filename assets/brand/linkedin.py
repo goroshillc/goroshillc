@@ -29,8 +29,8 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewB
 <ellipse cx="860" cy="330" rx="260" ry="100" fill="#8877B6" opacity=".4"/>
 <ellipse cx="1540" cy="60" rx="140" ry="80" fill="#BC43D3" opacity=".3"/>
 </g>
-<path d="M600 376 C 780 330, 930 400, 1090 356 S 1220 330, 1260 344" fill="none" stroke="#ffffff" stroke-opacity=".45" stroke-width="1.4"/>
-<path d="M640 30 C 800 76, 960 18, 1100 52 S 1220 70, 1250 50" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="1.1"/>
+<path d="M-20 372 C 260 320, 520 396, 820 356 S 1180 328, 1250 350" fill="none" stroke="#ffffff" stroke-opacity=".45" stroke-width="1.4"/>
+<path d="M-20 34 C 240 80, 520 14, 820 48 S 1180 70, 1250 44" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="1.1"/>
 <rect x="{X - 30}" y="118" width="4" height="164" rx="2" fill="url(#rule)"/>
 <path fill="#f5f4ff" d="{word}"/>
 <path fill="#f5f4ff" d="{tag}"/>

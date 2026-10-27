@@ -52,9 +52,9 @@ def banner(mode):
 @keyframes d1 {{ to {{ transform: translate(-120px, 40px) rotate(18deg) scale(1.15); }} }}
 @keyframes d2 {{ to {{ transform: translate(80px, -50px) rotate(-14deg) scale(.9); }} }}
 @keyframes d3 {{ to {{ transform: translate(140px, -30px) rotate(10deg) scale(1.1); }} }}
-.ln {{ stroke-dasharray: 1600; stroke-dashoffset: 1600; animation: draw 14s ease-in-out infinite; }}
+.ln {{ stroke-dasharray: 1400; stroke-dashoffset: 1400; animation: draw 14s ease-in-out infinite; }}
 .ln2 {{ animation-delay: 4s; }}
-@keyframes draw {{ 0% {{ stroke-dashoffset: 1600; opacity: 0; }} 15% {{ opacity: .55; }} 55% {{ stroke-dashoffset: 0; opacity: .55; }} 85%, 100% {{ stroke-dashoffset: 0; opacity: 0; }} }}
+@keyframes draw {{ 0% {{ stroke-dashoffset: 1400; opacity: 0; }} 15% {{ opacity: .55; }} 55% {{ stroke-dashoffset: 0; opacity: .55; }} 85%, 100% {{ stroke-dashoffset: 0; opacity: 0; }} }}
 .aura {{ animation: breathe 7s ease-in-out infinite; transform-origin: 1080px 206px; }}
 @keyframes breathe {{ 0%, 100% {{ opacity: .55; transform: scale(.94); }} 50% {{ opacity: 1; transform: scale(1.06); }} }}
 @media (prefers-reduced-motion: reduce) {{ .s1, .s2, .s3, .aura {{ animation: none; }} .ln {{ animation: none; stroke-dashoffset: 0; opacity: .4; }} }}
@@ -74,8 +74,8 @@ def banner(mode):
 <ellipse class="s3" cx="720" cy="320" rx="200" ry="90" fill="{SILK[2]}" opacity="{p["silk"][2]}"/>
 <ellipse class="s2" cx="1210" cy="90" rx="120" ry="70" fill="{SILK[3]}" opacity="{p["silk"][3]}"/>
 </g>
-<path class="ln" d="M520 372 C 680 322, 820 398, 960 352 S 1170 318, 1300 338" fill="none" stroke="{p["line"]}" stroke-width="1.4"/>
-<path class="ln ln2" d="M560 44 C 700 92, 840 30, 960 66 S 1150 96, 1290 50" fill="none" stroke="{p["line"]}" stroke-width="1.1"/>
+<path class="ln" d="M-20 352 C 220 300, 420 392, 640 350 S 980 318, 1300 362" fill="none" stroke="{p["line"]}" stroke-width="1.4"/>
+<path class="ln ln2" d="M-20 58 C 200 104, 420 30, 640 66 S 980 92, 1300 40" fill="none" stroke="{p["line"]}" stroke-width="1.1"/>
 <circle class="aura" cx="1080" cy="206" r="150" fill="url(#au)"/>
 </g>
 <rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="20" fill="none" stroke="{p["edge"]}"/>

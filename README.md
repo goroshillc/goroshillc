@@ -15,7 +15,7 @@
   <a href="mailto:contact@goroshillc.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/link-email-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/link-email-light.svg"><img src="assets/link-email-dark.svg" alt="contact@goroshillc.com" height="38"></picture></a>
 </p>
 
-<p align="center"><sub>Colossians 3:23 · ☧ · ICXC NIKA</sub><br><sub>Brand marks from Simple Icons (CC0); trademarks belong to their owners. Type: Cinzel, Inter, GFS Didot (SIL OFL 1.1).</sub></p>
+<p align="center"><sub>Colossians 3:23 · ☧ · ICXC NIKA</sub></p>
 
 <!-- Stats source for goroshi-stats-totals and assets/brand/glance.py; updated automatically.
 AGENTS    :: 9,000+ AI agent sessions run · 6,100+ orchestrated subagents
