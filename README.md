@@ -14,9 +14,9 @@ Rust-first systems, AI agent infrastructure, and exact-to-the-cent financial too
 NAME      :: Stefano Theofanous
 ROLE      :: Founder & Systems Engineer, Goroshi LLC
 FOCUS     :: multi-agent engineering platforms · financial reconciliation · GPU compute
-AGENTS    :: 8,800+ AI agent sessions run · 6,100+ orchestrated subagents
-TOKENS    :: 151B+ tokens processed across Claude, Codex, Copilot, Antigravity, OpenCode and local models (measured Oct 26 2026)
-SCALE     :: 467+ Rust crates in one workspace · 283+ repositories
+AGENTS    :: 9,000+ AI agent sessions run · 6,100+ orchestrated subagents
+TOKENS    :: 152B+ tokens processed across Claude, Codex, Copilot, Antigravity, OpenCode and local models (measured Oct 27 2026)
+SCALE     :: 383+ Rust crates in one workspace · 284+ repositories
 METAL     :: hand-written GPU compute kernels in Rust on Apple Metal (294 GB/s, 2.8 TFLOP/s FP32 measured)
 SOURCE    :: private. Architecture reviews and live walkthroughs on request.
 STATUS    :: open to engineering roles and platform engagements
