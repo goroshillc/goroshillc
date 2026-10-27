@@ -153,8 +153,10 @@ def stack(mode):
     data = {i.get("slug") or "": i["hex"] for i in json.load(open(f"{SI}/data/simple-icons.json"))}
     W, PADX, ROWH, PILLH, GAPX, GAPY, ICON, FS = 880, 0, 0, 36, 10, 10, 18, 14.5
     out, y = [], 4
+    out.append(f'<path fill="{p["head"]}" d="{path_d(INTER[600], "STACK", 11.5, 2, y + 13, tracking=2.4)}"/>')
+    y += 44
     for head, items in STACK:
-        out.append(f'<path fill="{p["head"]}" d="{path_d(INTER[600], head.upper(), 11.5, 2, y + 13, tracking=2.4)}"/>')
+        out.append(f'<path fill="{p["sub"]}" d="{path_d(INTER[500], head, 13, 2, y + 13)}"/>')
         y += 26
         x = 0
         for label, slug in items:
