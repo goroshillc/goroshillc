@@ -41,7 +41,6 @@ def banner(mode):
     co = path_d(INTER[600], "GOROSHI LLC", 15, X, 138, tracking=5)
     tt = path_d(INTER[500], "Platform & Systems Engineer", 26, X, 254)
     fx = path_d(INTER[400], "Rust · AI agent infrastructure · Financial systems · GPU compute", 17, X, 290)
-    mk, _, _ = M.mark(DIDOT, 1056, 218, 36, 4.3, p["ink"], "url(#cr)")
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Stefano Theofanous, Platform and Systems Engineer, Goroshi LLC.">
 <title>Stefano Theofanous · Platform &amp; Systems Engineer · Goroshi LLC</title>
 <defs>
@@ -55,7 +54,7 @@ def banner(mode):
 .ln {{ stroke-dasharray: 1600; stroke-dashoffset: 1600; animation: draw 14s ease-in-out infinite; }}
 .ln2 {{ animation-delay: 4s; }}
 @keyframes draw {{ 0% {{ stroke-dashoffset: 1600; opacity: 0; }} 15% {{ opacity: .55; }} 55% {{ stroke-dashoffset: 0; opacity: .55; }} 85%, 100% {{ stroke-dashoffset: 0; opacity: 0; }} }}
-.aura {{ animation: breathe 7s ease-in-out infinite; transform-origin: 1056px 200px; }}
+.aura {{ animation: breathe 7s ease-in-out infinite; transform-origin: 1080px 206px; }}
 @keyframes breathe {{ 0%, 100% {{ opacity: .55; transform: scale(.94); }} 50% {{ opacity: 1; transform: scale(1.06); }} }}
 @media (prefers-reduced-motion: reduce) {{ .s1, .s2, .s3, .aura {{ animation: none; }} .ln {{ animation: none; stroke-dashoffset: 0; opacity: .4; }} }}
 </style>
@@ -74,9 +73,9 @@ def banner(mode):
 <ellipse class="s3" cx="720" cy="320" rx="200" ry="90" fill="{SILK[2]}" opacity="{p["silk"][2]}"/>
 <ellipse class="s2" cx="1210" cy="90" rx="120" ry="70" fill="{SILK[3]}" opacity="{p["silk"][3]}"/>
 </g>
-<path class="ln" d="M640 360 C 760 250, 860 380, 980 260 S 1180 120, 1300 210" fill="none" stroke="{p["line"]}" stroke-width="1.4"/>
-<path class="ln ln2" d="M560 40 C 700 120, 820 20, 930 110 S 1120 260, 1290 160" fill="none" stroke="{p["line"]}" stroke-width="1.1"/>
-<circle class="aura" cx="1056" cy="200" r="130" fill="url(#au)"/>
+<path class="ln" d="M520 372 C 680 322, 820 398, 960 352 S 1170 318, 1300 338" fill="none" stroke="{p["line"]}" stroke-width="1.4"/>
+<path class="ln ln2" d="M560 44 C 700 92, 840 30, 960 66 S 1150 96, 1290 50" fill="none" stroke="{p["line"]}" stroke-width="1.1"/>
+<circle class="aura" cx="1080" cy="206" r="140" fill="url(#au)"/>
 </g>
 <rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="20" fill="none" stroke="{p["edge"]}"/>
 <rect x="{X - 28}" y="118" width="4" height="176" rx="2" fill="url(#rule)"/>
@@ -84,9 +83,22 @@ def banner(mode):
 <path fill="{p["ink"]}" d="{name}"/>
 <path fill="{p["ink"]}" d="{tt}"/>
 <path fill="{p["sub"]}" d="{fx}"/>
-{mk}
+{chi_rho_banner(p)}
 </svg>
 '''
+
+
+def chi_rho_banner(p):
+    """One crisp Chi Rho, sized and centered on the banner's text block (Stefano 2026-10-27:
+    "just have a simple Chi Rho crisp that actually fits in to the banner")."""
+    cap, sw, cx = 78, 6.5, 1080
+    paths, top, bottom = M.chi_rho(cx, 0, cap, sw)
+    dy = 206 - (top + bottom) / 2          # center the whole monogram on the text block's middle
+    strokes = "".join(f'<path d="{d}"/>' for d in paths)
+    return (f'<g transform="translate(0 {dy:.2f})" fill="none" stroke="url(#crb)" stroke-width="{sw}" '
+            f'stroke-linecap="round" stroke-linejoin="round">{strokes}</g>'
+            f'<linearGradient id="crb" gradientUnits="userSpaceOnUse" x1="0" y1="{top + dy:.0f}" x2="0" y2="{bottom + dy:.0f}">'
+            f'<stop offset="0" stop-color="{p["ink"]}"/><stop offset="1" stop-color="{p["accent"]}"/></linearGradient>')
 
 
 # Curated stack: what an employer or client scans for. Security posture and the reading list stay
@@ -157,30 +169,9 @@ def stack(mode):
             f'<title>Stack. {labels}.</title>' + "".join(out) + "</svg>\n")
 
 
-def logo():
-    """Avatar: the mark on a midnight-violet field with the silk light and one white swirl line."""
-    S = 1024
-    mk, top, bottom = M.mark(DIDOT, 512, 590, 150, 16, "#f5f4ff", "url(#cr)", gap_ratio=0.62)
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{S}" height="{S}" viewBox="0 0 {S} {S}" role="img" aria-label="Goroshi LLC mark: Alpha, Chi Rho, Omega.">
-<defs>
-<radialGradient id="bg" cx="50%" cy="42%" r="75%"><stop offset="0" stop-color="#2a2580"/><stop offset=".45" stop-color="#181A56"/><stop offset="1" stop-color="#07070d"/></radialGradient>
-<radialGradient id="glow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#8877B6" stop-opacity=".55"/><stop offset=".6" stop-color="#46439F" stop-opacity=".18"/><stop offset="1" stop-color="#46439F" stop-opacity="0"/></radialGradient>
-<linearGradient id="cr" gradientUnits="userSpaceOnUse" x1="0" y1="{top:.0f}" x2="0" y2="{bottom:.0f}"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#cbb8ff"/></linearGradient>
-<filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="70"/></filter>
-</defs>
-<rect width="{S}" height="{S}" fill="url(#bg)"/>
-<g filter="url(#blur)"><ellipse cx="300" cy="820" rx="300" ry="160" fill="#BC43D3" opacity=".28"/><ellipse cx="800" cy="220" rx="260" ry="150" fill="#46439F" opacity=".55"/></g>
-<circle cx="512" cy="512" r="330" fill="url(#glow)"/>
-<path d="M110 840 C 300 720, 430 930, 610 810 S 870 660, 970 740" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="4" stroke-linecap="round"/>
-{mk}
-</svg>
-'''
-
-
 os.makedirs(OUT, exist_ok=True)
 for mode in ("dark", "light"):
     open(f"{OUT}/banner-{mode}.svg", "w").write(banner(mode))
     open(f"{OUT}/stack-{mode}.svg", "w").write(stack(mode))
-open(f"{OUT}/logo.svg", "w").write(logo())
 for f in sorted(os.listdir(OUT)):
     print(f, os.path.getsize(f"{OUT}/{f}"))
