@@ -10,11 +10,11 @@ from gconstruct import g_outline
 CINZEL = None  # set by the caller
 
 # Midnight blue + Solo Leveling purple. Nothing pink, nothing magenta.
-INK = "#F4F5FF"        # near-white with a cool cast
-COOL = "#AEB8FF"       # periwinkle highlight (blue side of violet)
-VIOLET = "#5B45F0"     # Shadow Monarch violet
-ROYAL = "#2A2F9E"      # royal blue
-MIDNIGHT = "#0B1033"   # midnight blue
+INK = "#F7F4FF"        # near-white with a cool cast
+COOL = "#B9A8FF"       # periwinkle highlight (blue side of violet)
+VIOLET = "#6A35FF"     # Shadow Monarch violet
+ROYAL = "#3A1F9E"      # royal blue
+MIDNIGHT = "#0D0B33"   # midnight blue
 BLACK = "#05060F"      # blue-black
 
 
@@ -53,7 +53,7 @@ def avatar(S=1024):
     gdef, gcircle = glow(cx, cy, S * 0.46, "av")
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{S}" height="{S}" viewBox="0 0 {S} {S}" role="img" aria-label="Goroshi LLC">'
             f'<title>Goroshi LLC</title><defs>'
-            f'<radialGradient id="avbg" cx="50%" cy="45%" r="75%"><stop offset="0" stop-color="#151B55"/>'
+            f'<radialGradient id="avbg" cx="50%" cy="45%" r="75%"><stop offset="0" stop-color="#1A1650"/>'
             f'<stop offset=".6" stop-color="{MIDNIGHT}"/><stop offset="1" stop-color="{BLACK}"/></radialGradient>'
             f'{gdef}{g_fill("av", cy - (y1 - y0) / 2, cy + (y1 - y0) / 2)}</defs>'
             f'<rect width="{S}" height="{S}" fill="url(#avbg)"/>{gcircle}'

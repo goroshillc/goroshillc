@@ -23,15 +23,15 @@ CINZEL = f"{A}/Geist-600.ttf"  # display face: Geist 600 (Cinzel retired 2026-10
 DIDOT = f"{A}/GFSDidot.ttf"
 
 PAL = {
-    "dark": dict(ink="#F4F5FF", sub="#D3D8FF", accent="#AEB8FF", edge="#1E2560",
-                 bg=("#05060F", "#0B1033", "#121A52"), silk=(.95, .75, .55, .40), aura=(.55, .22),
-                 pill="#0E1440", pill_edge="#26307A", head="#AEB8FF", rule=("#AEB8FF", "#5B45F0")),
-    "light": dict(ink="#0E1240", sub="#232A80", accent="#4B3FD8", edge="#DCE0FF",
-                  bg=("#FFFFFF", "#F7F8FF", "#EEF0FF"), silk=(.14, .16, .16, .12), aura=(.28, .12),
-                  pill="#FFFFFF", pill_edge="#D2D7FF", head="#3B33C4", rule=("#2A2F9E", "#5B45F0")),
+    "dark": dict(ink="#F7F4FF", sub="#DDD6FF", accent="#B9A8FF", edge="#251E60",
+                 bg=("#05060F", "#0D0B33", "#1A1252"), silk=(.95, .75, .55, .40), aura=(.55, .22),
+                 pill="#120F40", pill_edge="#2E267A", head="#B9A8FF", rule=("#B9A8FF", "#6A35FF")),
+    "light": dict(ink="#140E40", sub="#2E2380", accent="#5A35E0", edge="#E2DCFF",
+                  bg=("#FFFFFF", "#F7F8FF", "#F1EEFF"), silk=(.14, .16, .16, .12), aura=(.28, .12),
+                  pill="#FFFFFF", pill_edge="#DAD2FF", head="#4A2FC4", rule=("#3A1F9E", "#6A35FF")),
 }
-# Midnight blue and Solo Leveling purple (Stefano 2026-10-27: "fuck pink", "SOLO LEVELING COLOR WAY").
-SILK = ("#10164A", "#2A2F9E", "#3F3BC8", "#5B45F0")
+# Midnight base, Shadow Monarch purple accents at 252-258 deg hue; never past 270 deg (pink starts ~290).
+SILK = ("#130F4A", "#3A1F9E", "#4E2BC8", "#6A35FF")
 
 
 def banner(mode):
@@ -56,7 +56,7 @@ def banner(mode):
 @media (prefers-reduced-motion: reduce) {{ .s1, .s2, .s3, .aura {{ animation: none; }} }}
 </style>
 <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{p["bg"][0]}"/><stop offset=".55" stop-color="{p["bg"][1]}"/><stop offset="1" stop-color="{p["bg"][2]}"/></linearGradient>
-<radialGradient id="au"><stop offset="0" stop-color="#5B45F0" stop-opacity="{p["aura"][0]}"/><stop offset=".55" stop-color="#2A2F9E" stop-opacity="{p["aura"][1]}"/><stop offset="1" stop-color="#2A2F9E" stop-opacity="0"/></radialGradient>
+<radialGradient id="au"><stop offset="0" stop-color="#6A35FF" stop-opacity="{p["aura"][0]}"/><stop offset=".55" stop-color="#3A1F9E" stop-opacity="{p["aura"][1]}"/><stop offset="1" stop-color="#3A1F9E" stop-opacity="0"/></radialGradient>
 <linearGradient id="rule" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{p["rule"][0]}"/><stop offset="1" stop-color="{p["rule"][1]}"/></linearGradient>
 <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="60"/></filter>
 <clipPath id="card"><rect width="{W}" height="{H}" rx="20"/></clipPath>
@@ -87,7 +87,7 @@ def goroshi_g_banner(p, mode):
     gmark.CINZEL = CINZEL
     size = 132
     x0, y0, x1, y1 = gmark.ink_box(CINZEL, "G", size)
-    top, bot = ("#F4F5FF", "#AEB8FF") if mode == "dark" else ("#1B1F6B", "#5B45F0")
+    top, bot = ("#F7F4FF", "#B9A8FF") if mode == "dark" else ("#24186B", "#6A35FF")
     return (f'<defs><linearGradient id="gb" gradientUnits="userSpaceOnUse" x1="0" y1="{206 - (y1 - y0) / 2:.0f}" '
             f'x2="0" y2="{206 + (y1 - y0) / 2:.0f}"><stop offset="0" stop-color="{top}"/><stop offset="1" stop-color="{bot}"/>'
             f'</linearGradient></defs><path fill="url(#gb)" d="{gmark.g_path(1080, 206, size)}"/>')

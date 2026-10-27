@@ -16,8 +16,8 @@ open(f"{OUT}/goroshi-avatar.svg", "w").write(gmark.avatar())
 
 H, GS = 280, 176                      # lockup height; G size
 for mode in ("dark", "light"):
-    g_top, g_bot = (INK, COOL) if mode == "dark" else ("#1B1F6B", VIOLET)
-    word_c, llc_c = (INK, COOL) if mode == "dark" else ("#11143F", ROYAL)
+    g_top, g_bot = (INK, COOL) if mode == "dark" else ("#24186B", VIOLET)
+    word_c, llc_c = (INK, COOL) if mode == "dark" else ("#160F3F", ROYAL)
     x0, y0, x1, y1 = ink_box(CINZEL, "G", GS)
     gw = x1 - x0
     gx = 30 + gw / 2
