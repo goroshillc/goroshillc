@@ -96,18 +96,24 @@ def goroshi_g_banner(p, mode):
 # Curated stack: what an employer or client scans for. Security posture and the reading list stay
 # private (Stefano 2026-10-27: "cant people copy me"). (label, simple-icons slug or None)
 STACK = [
-    ("Languages", [("Rust", "rust"), ("TypeScript", "typescript"), ("Python", "python"), ("Go", "go"),
-                   ("Swift", "swift"), ("C", "c"), ("SQL", "postgresql"), ("Lean 4", None), ("WebAssembly", "webassembly")]),
-    ("Systems and services", [("Tokio", "rust"), ("Axum", "rust"), ("Leptos", "leptos"), ("Apache Arrow", "apachearrow"),
-                              ("DataFusion", "rust"), ("redb", "rust"), ("PostgreSQL", "postgresql"), ("SQLite", "sqlite"), ("DuckDB", "duckdb")]),
-    ("AI engineering", [("Claude Code", "claude"), ("Codex", None), ("Gemini", "googlegemini"), ("Cursor", "cursor"),
-                        ("GitHub Copilot", "githubcopilot"), ("Model Context Protocol", "modelcontextprotocol"),
-                        ("Ollama", "ollama"), ("Hugging Face", "huggingface"), ("ONNX Runtime", "onnx")]),
-    ("Compute and infrastructure", [("CUDA", "nvidia"), ("Metal", "apple"), ("Arch Linux", "archlinux"), ("macOS", "apple"),
-                                    ("Docker", "docker"), ("Kubernetes", "kubernetes"), ("Cloudflare", "cloudflare"),
-                                    ("Tailscale", "tailscale"), ("GitHub Actions", "githubactions")]),
-    ("Workflow", [("Git", "git"), ("Neovim", "neovim"), ("WezTerm", "wezterm"), ("Ghostty", "ghostty"),
-                  ("Nushell", "nushell"), ("Bun", "bun"), ("Tailwind CSS", "tailwindcss"), ("uv", "uv"), ("Ruff", "ruff")]),
+    ("Languages", [("Rust", "rust"), ("Python", "python"), ("TypeScript", "typescript"), ("JavaScript", "javascript"),
+                   ("Go", "go"), ("Lua", "lua"), ("Shell", "gnubash"), ("Java", "openjdk"), ("C", "c"), ("C++", "cplusplus"),
+                   ("C#", "dotnet"), ("Swift", "swift"), ("SQL", "postgresql"), ("HTML", "html5"), ("CSS", "css"),
+                   ("PowerShell", None), ("Ruby", "ruby"), ("Nushell", "nushell"), ("Lean 4", None), ("WebAssembly", "webassembly")]),
+    ("Systems and services", [("Tokio", "rust"), ("Axum", "rust"), ("Tower", "rust"), ("Serde", "rust"), ("Leptos", "leptos"),
+                              ("Apache Arrow", "apachearrow"), ("DataFusion", "rust"), ("redb", "rust"), ("PostgreSQL", "postgresql"),
+                              ("SQLite", "sqlite"), ("DuckDB", "duckdb")]),
+    ("AI engineering", [("Claude Code", "claude"), ("Codex", None), ("Muse", None), ("Antigravity", None), ("Gemini", "googlegemini"),
+                        ("Cursor", "cursor"), ("GitHub Copilot", "githubcopilot"), ("OpenCode", "opencode"), ("Kimi", "kimi"),
+                        ("DeepSeek", "deepseek"), ("Qwen", "qwen"), ("Grok", None), ("Model Context Protocol", "modelcontextprotocol"),
+                        ("Ollama", "ollama"), ("Hugging Face", "huggingface"), ("ONNX Runtime", "onnx"), ("whisper.cpp", None)]),
+    ("Compute and infrastructure", [("CUDA", "nvidia"), ("Metal", "apple"), ("Arch Linux", "archlinux"), ("Hyprland", "hyprland"),
+                                    ("macOS", "apple"), ("Docker", "docker"), ("Kubernetes", "kubernetes"), ("Ansible", "ansible"),
+                                    ("Cloudflare", "cloudflare"), ("Tailscale", "tailscale"), ("Syncthing", "syncthing"),
+                                    ("GitHub Actions", "githubactions")]),
+    ("Workflow", [("Git", "git"), ("GitHub", "github"), ("Neovim", "neovim"), ("Helix", "helix"), ("Zed", "zedindustries"),
+                  ("WezTerm", "wezterm"), ("Ghostty", "ghostty"), ("Starship", "starship"), ("Bun", "bun"),
+                  ("Tailwind CSS", "tailwindcss"), ("Biome", "biome"), ("uv", "uv"), ("Ruff", "ruff")]),
 ]
 
 
