@@ -12,7 +12,6 @@
 
 <p align="center">
   <a href="https://goroshillc.com/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/link-site-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/link-site-light.svg"><img src="assets/link-site-dark.svg" alt="goroshillc.com" height="38"></picture></a>&nbsp;
-  <a href="https://www.linkedin.com/in/stefano-theofanous"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/link-linkedin-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/link-linkedin-light.svg"><img src="assets/link-linkedin-dark.svg" alt="LinkedIn" height="38"></picture></a>&nbsp;
   <a href="mailto:contact@goroshillc.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/link-email-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/link-email-light.svg"><img src="assets/link-email-dark.svg" alt="contact@goroshillc.com" height="38"></picture></a>
 </p>
 
