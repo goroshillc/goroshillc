@@ -19,9 +19,9 @@ defs = (f'<linearGradient id="gli" gradientUnits="userSpaceOnUse" x1="0" y1="{19
         f'<stop offset=".55" stop-color="#2A2F9E" stop-opacity=".22"/><stop offset="1" stop-color="#2A2F9E" stop-opacity="0"/></radialGradient>')
 body = f'<circle cx="1400" cy="198" r="210" fill="url(#ali)"/><path fill="url(#gli)" d="{gmark.g_path(1400, 198, 150)}"/>'
 word = path_d(CINZEL, "GOROSHI", 66, X - 2, 178, tracking=8)
-tag = path_d(INTER[500], "Platform & Systems Engineering", 30, X, 228)
-fx = path_d(INTER[400], "Rust · AI agent infrastructure · Financial systems · GPU compute", 19, X, 270)
-svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Goroshi LLC. Platform and Systems Engineering.">
+tag = path_d(INTER[500], "Production Systems in Rust", 30, X, 228)
+fx = path_d(INTER[400], "AI agent platform, cent-exact finance, GPU kernels at 294 GB/s", 19, X, 270)
+svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Goroshi LLC. Production systems in Rust: AI agent platform, cent-exact finance, GPU kernels at 294 GB/s.">
 <defs>{defs}
 <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#05060F"/><stop offset=".55" stop-color="#0B1033"/><stop offset="1" stop-color="#121A52"/></linearGradient>
 <linearGradient id="rule" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#AEB8FF"/><stop offset="1" stop-color="#5B45F0"/></linearGradient>

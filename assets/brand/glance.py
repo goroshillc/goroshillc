@@ -22,13 +22,22 @@ def stats():
     sessions, subagents = re.findall(r"([\d,]+\+)", g("AGENTS"))[:2]
     tokens = re.search(r"([\d.,]+[KMBT]\+)", g("TOKENS")).group(1)
     crates, repos = re.findall(r"([\d,]+\+)", g("SCALE"))[:2]
-    return [(sessions, "AI agent sessions"), (subagents, "orchestrated subagents"),
-            (tokens, "tokens processed"), (crates, "Rust crates, one workspace")]
+    return dict(sessions=sessions, subagents=subagents, tokens=tokens, crates=crates, repos=repos)
+
+
+def cards():
+    s = stats()
+    return [
+        ("AI agent platform", f"{s['sessions']} sessions, {s['subagents']} subagents and {s['tokens']} tokens across model families."),
+        ("Cent-exact bookkeeping", "Statements and receipts reconciled to the cent for operating businesses, every figure traced to its source."),
+        ("GPU compute in Rust", "Hand-written Metal kernels measured at 294\u00a0GB/s and 2.8\u00a0TFLOP/s\u00a0FP32."),
+        ("Rust at scale", f"{s['crates']} crates in one workspace across {s['repos']} repositories, every change formatted, linted and tested."),
+    ]
 
 
 def wrap(text, font, size, maxw):
     lines, cur = [], ""
-    for word in text.split():
+    for word in text.split(" "):  # split on plain spaces only; NBSP keeps a number with its unit
         trial = f"{cur} {word}".strip()
         if width(font, trial, size) > maxw and cur:
             lines.append(cur)
@@ -39,29 +48,34 @@ def wrap(text, font, size, maxw):
 
 
 def glance(mode):
+    """'What I build': a 2x2 capability grid, each card a title and one line of evidence
+    (Stefano 2026-10-27: "the at a glance senences also is kind of strange")."""
     p = PAL[mode]
     out, y = [], 4
-    out.append(f'<path fill="{p["head"]}" d="{path_d(INTER[600], "AT A GLANCE", 11.5, 2, y + 13, tracking=2.4)}"/>')
-    y += 40
-    intro = ("I build production systems in Rust: multi-agent engineering platforms, financial "
-             "reconciliation that is exact to the cent, and GPU compute on hardware I own.")
-    for line in wrap(intro, INTER[400], 18, W - 4):
-        out.append(f'<path fill="{p["ink"]}" d="{path_d(INTER[400], line, 18, 2, y)}"/>')
-        y += 28
-    y += 6
-    n, gap = 4, 12
-    cw, ch = (W - gap * (n - 1)) / n, 96
-    for i, (num, label) in enumerate(stats()):
-        x = i * (cw + gap)
-        out.append(f'<rect x="{x + .5:.2f}" y="{y + .5:.2f}" width="{cw - 1:.2f}" height="{ch - 1}" rx="14" fill="{p["card"]}" stroke="{p["edge"]}"/>')
-        out.append(f'<path fill="{p["ink"]}" d="{path_d(INTER[600], num, 30, x + 20, y + 46)}"/>')
-        out.append(f'<path fill="{p["sub"]}" d="{path_d(INTER[400], label, 13.5, x + 20, y + 72)}"/>')
-    y += ch + 26
+    out.append(f'<path fill="{p["head"]}" d="{path_d(INTER[600], "WHAT I BUILD", 11.5, 2, y + 13, tracking=2.4)}"/>')
+    y += 34
+    gap, cw, pad = 14, (W - 14) / 2, 22
+    items = cards()
+    rows = [items[0:2], items[2:4]]
+    for row in rows:
+        bodies = [wrap(body, INTER[400], 14.5, cw - 2 * pad) for _, body in row]
+        ch = pad + 20 + 12 + 22 * max(len(b) for b in bodies) + pad - 6
+        for i, ((title, _), lines) in enumerate(zip(row, bodies)):
+            x = i * (cw + gap)
+            out.append(f'<rect x="{x + .5:.2f}" y="{y + .5:.2f}" width="{cw - 1:.2f}" height="{ch - 1:.2f}" rx="14" fill="{p["card"]}" stroke="{p["edge"]}"/>')
+            out.append(f'<rect x="{x + pad:.2f}" y="{y + pad - 2:.2f}" width="22" height="3" rx="1.5" fill="{p["dot"]}"/>')
+            out.append(f'<path fill="{p["ink"]}" d="{path_d(INTER[600], title, 19, x + pad, y + pad + 26)}"/>')
+            ly = y + pad + 26 + 26
+            for line in lines:
+                out.append(f'<path fill="{p["sub"]}" d="{path_d(INTER[400], line, 14.5, x + pad, ly)}"/>')
+                ly += 22
+        y += ch + gap
+    y += 14
     out.append(f'<circle cx="7" cy="{y - 5:.2f}" r="4" fill="{p["dot"]}"/>')
-    status = "Open to engineering roles and platform engagements · architecture reviews on request"
+    status = "Open to engineering roles and platform engagements. contact@goroshillc.com"
     out.append(f'<path fill="{p["ink"]}" d="{path_d(INTER[500], status, 15, 20, y)}"/>')
     H = y + 8
-    alt = "At a glance. " + intro + " " + "; ".join(f"{a} {b}" for a, b in stats()) + ". " + status + "."
+    alt = "What I build. " + " ".join(f"{a}: {b}" for a, b in items) + " " + status
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H:.0f}" viewBox="0 0 {W} {H:.0f}" role="img" aria-label="{alt}">'
             f'<title>{alt}</title>' + "".join(out) + "</svg>\n"), alt
 

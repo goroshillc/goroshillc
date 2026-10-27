@@ -39,10 +39,10 @@ def banner(mode):
     W, H, X = 1280, 400, 112
     name = path_d(f"{A}/Geist-600.ttf", "Stefano Theofanous", 62, X - 3, 212, tracking=-1.2)
     co = path_d(INTER[500], "GOROSHI LLC", 14, X, 138, tracking=4.5)
-    tt = path_d(INTER[500], "Platform & Systems Engineer", 26, X, 254)
-    fx = path_d(INTER[400], "Rust · AI agent infrastructure · Financial systems · GPU compute", 17, X, 290)
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Stefano Theofanous, Platform and Systems Engineer, Goroshi LLC.">
-<title>Stefano Theofanous · Platform &amp; Systems Engineer · Goroshi LLC</title>
+    tt = path_d(INTER[500], "Founder and Rust Systems Engineer", 26, X, 254)
+    fx = path_d(INTER[400], "Multi-model AI agent platform, cent-exact bookkeeping, Rust GPU kernels", 17, X, 290)
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Stefano Theofanous, Founder and Rust Systems Engineer, Goroshi LLC. Multi-model AI agent platform, cent-exact bookkeeping, Rust GPU kernels.">
+<title>Stefano Theofanous · Founder and Rust Systems Engineer · Goroshi LLC</title>
 <defs>
 <style>
 .s1 {{ animation: d1 28s ease-in-out infinite alternate; transform-origin: 900px 160px; }}

@@ -2,11 +2,11 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
-    <img src="assets/banner-dark.svg" width="100%" alt="Stefano Theofanous, Platform and Systems Engineer, Goroshi LLC.">
+    <img src="assets/banner-dark.svg" width="100%" alt="Stefano Theofanous, Founder and Rust Systems Engineer, Goroshi LLC.">
   </picture>
 </p>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/glance-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/glance-light.svg"><img src="assets/glance-dark.svg" alt="At a glance: I build production systems in Rust: multi-agent engineering platforms, financial reconciliation that is exact to the cent, and GPU compute on hardware I own. Open to engineering roles and platform engagements." width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/glance-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/glance-light.svg"><img src="assets/glance-dark.svg" alt="What I build: AI agent platform; cent-exact bookkeeping for operating businesses; GPU compute in Rust; Rust at scale. Open to engineering roles and platform engagements." width="100%"></picture>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack-light.svg"><img src="assets/stack-dark.svg" alt="Stack: Rust, TypeScript, Python, Go, Swift, C, SQL, Lean 4, WebAssembly; Tokio, Axum, Leptos, Apache Arrow, DataFusion, redb, PostgreSQL, SQLite, DuckDB; Claude Code, Codex, Gemini, Cursor, GitHub Copilot, Model Context Protocol, Ollama, Hugging Face, ONNX Runtime; CUDA, Metal, Arch Linux, macOS, Docker, Kubernetes, Cloudflare, Tailscale, GitHub Actions; Git, Neovim, WezTerm, Ghostty, Nushell, Bun, Tailwind CSS, uv, Ruff." width="100%"></picture>
 
