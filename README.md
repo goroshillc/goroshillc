@@ -15,6 +15,8 @@
   <a href="mailto:contact@goroshillc.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/link-email-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/link-email-light.svg"><img src="assets/link-email-dark.svg" alt="contact@goroshillc.com" height="38"></picture></a>
 </p>
 
+<p align="center">Fun fact: my first project was a <a href="https://scriptures.goroshillc.com/">King James Bible reader</a>, and its tests still check all 31,102 verses against the source text, letter for letter.</p>
+
 <p align="center"><sub>Colossians 3:23 · ☧ · ICXC NIKA</sub></p>
 
 <!-- Stats source for goroshi-stats-totals and assets/brand/glance.py; updated automatically.
