@@ -1,48 +1,32 @@
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.webp">
-    <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.webp">
-    <img src="assets/banner-light.png" width="100%" alt="GOROSHI. Stefano Theofanous, platform and systems engineer, AI-native.">
-  </picture>
+  <img src="assets/banner-dark.webp" width="100%" alt="Goroshi. Stefano Theofanous, platform and systems engineer.">
 </p>
 
 <div align="center">
 
-### `PLATFORM & SYSTEMS ENGINEER // GOROSHI LLC`
-**`AI-NATIVE` · `NEOVIM` · `ARCH LINUX` · `METAL TO BROWSER` · `SHIPS DAILY`**
+**Platform & Systems Engineer · Founder, Goroshi LLC**
+
+Rust-first systems, AI agent infrastructure, and exact-to-the-cent financial tooling.
 
 </div>
 
 ```text
-ID        :: goroshillc
-ORG       :: Goroshi LLC · Founder & Systems Engineer
-EDITOR    :: Neovim. hands on home row.
-OS        :: Arch Linux (Omarchy, Hyprland) · macOS
-AIM       :: theosis.
+NAME      :: Stefano Theofanous
+ROLE      :: Founder & Systems Engineer, Goroshi LLC
+FOCUS     :: multi-agent engineering platforms · financial reconciliation · GPU compute
 AGENTS    :: 8,800+ AI agent sessions run · 6,100+ orchestrated subagents
-          :: 210 sessions in a single day · 117 agents in one workflow
 TOKENS    :: 151B+ tokens processed across Claude, Codex, Copilot, Antigravity, OpenCode and local models (measured Oct 26 2026)
-FLEET     :: CLI: Claude Code · Codex · Gemini CLI · GitHub Copilot · OpenCode
-          :: IDE & apps: Cursor · Antigravity · Claude · ChatGPT · Gemini
-          :: local: Ollama · Qwen3.8 27B · Flash-Next
-METAL     :: hand-written GPU compute kernels in Rust on Apple Metal
-          :: measured: 294 GB/s memory bandwidth · 2.8 TFLOP/s FP32 · ridge 9.6 FLOP/byte
-COMPUTE   :: Apple M5 Max · 18-core CPU · 40-core GPU · 128 GB unified · 8 TB SSD · +
-          :: GPUs: NVIDIA RTX 5080 · RTX 5070 (Blackwell) · RTX 4090 · RTX 4080 (Ada) · RTX 3080 · +
-          :: 80+ TB storage & backup, local + cloud
-          :: private Tailscale mesh across every node · +
-          :: expanding.
 SCALE     :: 467+ Rust crates in one workspace · 283+ repositories
-OUTPUT    :: 3,985+ contributions in the last year across 260+ repositories
-SOURCE    :: private. architecture reviews and live walkthroughs on request.
-STATUS    :: ACTIVE PRODUCTION // OPEN TO ENGINEERING ROLES & PLATFORM ENGAGEMENTS
+METAL     :: hand-written GPU compute kernels in Rust on Apple Metal (294 GB/s, 2.8 TFLOP/s FP32 measured)
+SOURCE    :: private. Architecture reviews and live walkthroughs on request.
+STATUS    :: open to engineering roles and platform engagements
 ```
 
-### `01 // STACK`
+### Stack
 
 <div align="center">
 
-`LANGUAGES`
+**Languages**
 
 ![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
 ![Go](https://img.shields.io/badge/Go-000000?style=for-the-badge&logo=go&logoColor=00ADD8)
@@ -50,29 +34,42 @@ STATUS    :: ACTIVE PRODUCTION // OPEN TO ENGINEERING ROLES & PLATFORM ENGAGEMEN
 ![JavaScript](https://img.shields.io/badge/JavaScript-000000?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 ![Python](https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=python&logoColor=3776AB)
 ![C](https://img.shields.io/badge/C-000000?style=for-the-badge&logo=c&logoColor=A8B9CC)
+![Swift](https://img.shields.io/badge/Swift-000000?style=for-the-badge&logo=swift&logoColor=F05138)
 ![SQL](https://img.shields.io/badge/SQL-000000?style=for-the-badge&logo=sqlite&logoColor=white)
 ![Lean 4](https://img.shields.io/badge/Lean_4-000000?style=for-the-badge)
+![Lua](https://img.shields.io/badge/Lua-000000?style=for-the-badge&logo=lua&logoColor=white)
+![Shell](https://img.shields.io/badge/Shell-000000?style=for-the-badge&logo=gnubash&logoColor=white)
+![Nushell](https://img.shields.io/badge/Nushell-000000?style=for-the-badge&logo=nushell&logoColor=white)
 
-`INFRASTRUCTURE`
+**Infrastructure**
 
+![Linux](https://img.shields.io/badge/Arch_Linux-000000?style=for-the-badge&logo=archlinux&logoColor=1793D1)
+![macOS](https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white)
+![Hyprland](https://img.shields.io/badge/Hyprland-000000?style=for-the-badge&logo=hyprland&logoColor=58E1FF)
+![systemd](https://img.shields.io/badge/systemd-000000?style=for-the-badge&logo=linux&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-000000?style=for-the-badge&logo=docker&logoColor=2496ED)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-000000?style=for-the-badge&logo=kubernetes&logoColor=326CE5)
 ![AWS](https://img.shields.io/badge/AWS_S3_·_CloudFront-000000?style=for-the-badge&logo=amazonwebservices&logoColor=FF9900)
+![Cloudflare Workers](https://img.shields.io/badge/Cloudflare_Workers-000000?style=for-the-badge&logo=cloudflare&logoColor=F38020)
+![Tailscale](https://img.shields.io/badge/Tailscale-000000?style=for-the-badge&logo=tailscale&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-000000?style=for-the-badge&logo=githubactions&logoColor=2088FF)
 ![RabbitMQ](https://img.shields.io/badge/RabbitMQ-000000?style=for-the-badge&logo=rabbitmq&logoColor=FF6600)
-![Linux](https://img.shields.io/badge/Arch_Linux-000000?style=for-the-badge&logo=archlinux&logoColor=1793D1)
 ![Git](https://img.shields.io/badge/Git-000000?style=for-the-badge&logo=git&logoColor=F05032)
 ![Neovim](https://img.shields.io/badge/Neovim-000000?style=for-the-badge&logo=neovim&logoColor=57A143)
+![WezTerm](https://img.shields.io/badge/WezTerm-000000?style=for-the-badge&logo=wezterm&logoColor=4E49EE)
 
-`DATA & AI`
+**Data & Compute**
 
 ![DataFusion](https://img.shields.io/badge/Apache_DataFusion-000000?style=for-the-badge&logo=apache&logoColor=white)
 ![Arrow](https://img.shields.io/badge/Apache_Arrow-000000?style=for-the-badge&logo=apache&logoColor=white)
+![redb](https://img.shields.io/badge/redb-000000?style=for-the-badge&logo=rust&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-000000?style=for-the-badge&logo=sqlite&logoColor=003B57)
+![DuckDB](https://img.shields.io/badge/DuckDB-000000?style=for-the-badge&logo=duckdb&logoColor=FFF000)
 ![Pandas](https://img.shields.io/badge/Pandas-000000?style=for-the-badge&logo=pandas&logoColor=white)
 ![CUDA](https://img.shields.io/badge/CUDA-000000?style=for-the-badge&logo=nvidia&logoColor=76B900)
 ![Metal](https://img.shields.io/badge/Metal-000000?style=for-the-badge&logo=apple&logoColor=white)
 
-`AI FLEET`
+**AI Engineering**
 
 ![Claude Code](https://img.shields.io/badge/Claude_Code-000000?style=for-the-badge&logo=anthropic&logoColor=white)
 ![Codex](https://img.shields.io/badge/OpenAI_Codex-000000?style=for-the-badge&logo=openai&logoColor=white)
@@ -81,35 +78,11 @@ STATUS    :: ACTIVE PRODUCTION // OPEN TO ENGINEERING ROLES & PLATFORM ENGAGEMEN
 ![Copilot](https://img.shields.io/badge/GitHub_Copilot-000000?style=for-the-badge&logo=githubcopilot&logoColor=white)
 ![Antigravity](https://img.shields.io/badge/Antigravity-000000?style=for-the-badge&logo=google&logoColor=white)
 ![OpenCode](https://img.shields.io/badge/OpenCode-000000?style=for-the-badge)
-![Ollama](https://img.shields.io/badge/Ollama_·_Qwen3.8_27B_·_Flash--Next-000000?style=for-the-badge&logo=ollama&logoColor=white)
-![ChatGPT](https://img.shields.io/badge/ChatGPT-000000?style=for-the-badge&logo=openai&logoColor=white)
+![MCP](https://img.shields.io/badge/Model_Context_Protocol-000000?style=for-the-badge&logo=modelcontextprotocol&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama_·_Qwen3.8_27B-000000?style=for-the-badge&logo=ollama&logoColor=white)
+![Hugging Face](https://img.shields.io/badge/Hugging_Face-000000?style=for-the-badge&logo=huggingface&logoColor=FFD21E)
 
 </div>
-
-
-### `02 // PRODUCTION SYSTEMS` (private repositories)
-
-| SYSTEM | ARCHITECTURE & SCOPE | STACK |
-| :--- | :--- | :--- |
-| **Multi-Agent Engineering Harness** | Parallel AI coding agents on isolated lanes across WezTerm. Cross-family review: the model family that writes a change does not approve it. Every commit passes `cargo fmt`, `clippy::pedantic -D warnings`, the test suite and a secret and personal-data scan before it lands. | `Rust` · `Git` · `WezTerm` |
-| **Financial & OCR Reconciliation Engine** | Monthly sales packets, statement and receipt OCR, reconciled to the exact cent in `i64` with zero floating-point drift; every number traces back to its source page. | `Rust` · `DataFusion` · `redb` · `OCR` |
-| **Bare-Metal Performance Lab** | Roofline measurement on our own hardware: streaming bandwidth, FMA throughput and the ridge point, used to pick quantization (q4/q8/fp16) and kernel fusion for local model inference. | `Rust` · `Metal` |
-| **Proven Money** | `Lean 4` specification of the currency core: cents conserved across N-way splits, half-up rounding bounds, no `i64` overflow. Machine-checked proofs underway; target year-end 2026. | `Lean 4` · `Rust` |
-| **Field Operations & Property Platform** | Rental property operations: work orders, labor-hour ledgers, receipts and expenses on embedded ACID transactional storage. | `Rust` · `redb` |
-
-### `03 // DOCTRINE`
-
-```text
-01. MEASURE BEFORE CLAIMING   :: working code and a verified result are different states.
-                                 done means it ran and was checked against ground truth.
-02. ADVERSARIAL VERIFICATION  :: the model family that writes a change never approves it.
-                                 compiler, lint and privacy gates fail closed.
-03. ZERO-FLOAT LEDGERS        :: money is i64 integer cents, being proven in Lean 4.
-                                 floating point is forbidden on financial paths.
-04. SCAR-DRIVEN AUTOMATION    :: every bug becomes a regression test.
-                                 every repeated failure becomes a permanent gate.
-05. SHIP DAILY                :: small verified increments, every day, no unverified merges.
-```
 
 ---
 
