@@ -15,6 +15,7 @@ import os
 import re
 import sys
 
+import gmark
 import mark as M
 from typeset import cap_height, path_d, width
 
@@ -83,27 +84,16 @@ def banner(mode):
 <path fill="{p["ink"]}" d="{name}"/>
 <path fill="{p["ink"]}" d="{tt}"/>
 <path fill="{p["sub"]}" d="{fx}"/>
-{chi_rho_banner(p)}
+{goroshi_g_banner(p)}
 </svg>
 '''
 
 
-def chi_rho_banner(p):
-    """The Chi Rho inside the same fine gradient ring as the G logo, so banner and logo read as one
-    family (Stefano 2026-10-27: "make sure it actually fits"). Centered on the text block."""
-    cx, cy, R = 1080, 206, 74
-    ring_w = 2.6
-    cap, sw = 58, 4.2
-    paths, top, bottom = M.chi_rho(cx, 0, cap, sw)
-    dy = cy - (top + bottom) / 2
-    strokes = "".join(f'<path d="{d}"/>' for d in paths)
-    return (f'<linearGradient id="crb" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{p["ink"]}"/>'
-            f'<stop offset=".55" stop-color="{p["accent"]}"/><stop offset="1" stop-color="{"#BC43D3" if p["ink"] == "#f5f4ff" else "#46439F"}"/></linearGradient>'
-            f'<linearGradient id="crs" gradientUnits="userSpaceOnUse" x1="0" y1="{top + dy:.0f}" x2="0" y2="{bottom + dy:.0f}">'
-            f'<stop offset="0" stop-color="{p["ink"]}"/><stop offset="1" stop-color="{p["accent"]}"/></linearGradient>'
-            f'<circle cx="{cx}" cy="{cy}" r="{R}" fill="none" stroke="url(#crb)" stroke-width="{ring_w}"/>'
-            f'<g transform="translate(0 {dy:.2f})" fill="none" stroke="url(#crs)" stroke-width="{sw}" '
-            f'stroke-linecap="round" stroke-linejoin="round">{strokes}</g>')
+def goroshi_g_banner(p):
+    """The Goroshi G monogram (the logo), centered on the banner's text block."""
+    gmark.CINZEL = CINZEL
+    defs, body = gmark.monogram(1080, 206, 92, uid="bn")
+    return f"<defs>{defs}</defs>{body}"
 
 
 # Curated stack: what an employer or client scans for. Security posture and the reading list stay
