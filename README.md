@@ -29,7 +29,7 @@ Business records and the code behind them stay private.
 
 | Project | What it is | Links |
 | --- | --- | --- |
-| **[The Scriptures](https://github.com/goroshillc/scriptures)** | The King James Bible with public-domain master engravings, readable offline. Its tests check all 31,102 verses against the source text, letter for letter. | [Read it](https://scriptures.goroshillc.com/) &middot; [Source](https://github.com/goroshillc/scriptures) |
+| **[The Scriptures](https://github.com/goroshillc/scriptures)** | The King James Bible with public-domain master engravings, free to read on the web. Its tests check all 31,102 verses against the source text, letter for letter. | [Read it](https://scriptures.goroshillc.com/) &middot; [Source](https://github.com/goroshillc/scriptures) |
 
 <p>
   <a href="https://scriptures.goroshillc.com/"><img alt="Site status" src="https://img.shields.io/website?url=https%3A%2F%2Fscriptures.goroshillc.com%2F&label=scriptures.goroshillc.com&style=flat-square"></a>
